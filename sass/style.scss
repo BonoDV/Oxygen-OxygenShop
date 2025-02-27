@@ -1,0 +1,14 @@
+@use "_header";
+@use "_section_marketing";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+body {
+    min-width: 320px;
+}
