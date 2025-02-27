@@ -7,28 +7,27 @@
     <title>Oxygen Shop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
-<header>
-    <h1>OXYGEN Shop</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Why us</a></li>
-            <li><a href="products.html">Benefits</a></li>
-            <li><a href="contact.html">Prices</a></li>
-            <li><a href="about.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+
 
 <body>
+    <header class="header">
+        <h1 class="header__logo">OXYGEN Shop</h1>
+        <button class="header__button__hamburger"><img src="resources\svg\Menu.svg" alt="Hamburger Menu"></button>
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__list__list__item"><a href="#">Why us</a></li>
+                <li class="header__nav__list__list__item"><a href="#">Benefits</a></li>
+                <li class="header__nav__list__list__item"><a href="#">Prices</a></li>
+                <li class="header__nav__list__list__item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <section>
         <h1>Sell More!</h1>
         <p>Open shop on our platform and increase your sales.</p>
         <button>Open your shop</button>
         <img src="resources\img\computer.png" alt="computer image">
         <h2>The most popular sales platform in country</h2>
-        <img src="resources\svg\Ellipse1.svg" alt="Red Ellipse">
-        <img src="resources\svg\Ellipse2.svg" alt="Blue Ellipse">
-        <img src="resources\svg\Ellipse3.svg" alt="Green Ellipse">
         <img src="resources\svg\Person2.svg" alt="Person Icon">
         <img src="resources\svg\Eye2.svg" alt="Eye Icon">
         <img src="resources\svg\Catalog2.svg" alt="Catalog Icon">
@@ -63,66 +62,70 @@
         </div>
     </section>
     <section>
-        <div class="first-card">
-            <h2>Pricing</h2>
+        <h2>Pricing</h2>
+        <article class="first-card">
+
             <h3>Basic</h3>
             <p>0$</p>
-            <img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
-            <p>100MB HDD</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
-            <p>1 subdomain</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
-            <p>2 E-mails</p><img src="resources\svg\Cross.svg" alt="Cross Icon">
-            <p>Two years license</p><img src="resources\svg\Cross.svg" alt="Checkbox Icon">
-            <p>Full suport</p>
+            <ul class="list">
+                <li>100MB HDD</li>
+                <li>1 subdomain</li>
+                <li>2 E-mails</li>
+                <li>Two years license</li>
+                <li>Full suport</li>
+            </ul>
             <button>Begin</button>
-        </div>
-        <div class="second-card">
-            <h3>Professional</h3>
-            <p>$25</p>
-            <p>Limited offer</p>
-            <img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
-            <p>500MB HDD</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
-            <p>2 subdomains</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
-            <p>5 E-mails</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
-            <p>One year license</p><img src="resources\svg\Cross.svg" alt="Cross Icon">
-            <p>Full suport</p>
-            <button>Begin</button>
-        </div>
-        <div class="third-card">
-            <h3>Premium</h3>
-            <p>$60</p>
-            <img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
-            <p>2GB HDD</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
-            <p>5 subdomains</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
-            <p>20 E-mails</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
-            <p>Two years license</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
-            <p>Full suport</p>
-            <button>Begin</button>
-        </div>
-        <div class="contact">
-            <h2>Any questions?</h2>
-            <p>Leave your email address or call us!</p>
-            <a href="mailto:info@bestshop.xyz">info@bestshop.xyz</a></p>
-            <a href="tel:123456789">123456789</a></p>
-            <form action="contact.html" method="post">
-                <label for="name">Name:</label>
-                <input type="text" name="name">
-                <label for="email">E-mail:</label>
-                <input type="email" name="email">
-                <input type="checkbox">I hereby give consent for my personal data included in my application to be
-                processed for the purposes of the recruitment process under the European Parliament’s and Council of the
-                European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the
-                processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC
-                (Data Protection Directive)</checkbox>
-                <button>Send</button>
-            </form>
-        </div>
+            </div>
+            <div class="second-card">
+                <h3>Professional</h3>
+                <p>$25</p>
+                <p>Limited offer</p>
+                <img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
+                <p>500MB HDD</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
+                <p>2 subdomains</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
+                <p>5 E-mails</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
+                <p>One year license</p><img src="resources\svg\Cross.svg" alt="Cross Icon">
+                <p>Full suport</p>
+                <button>Begin</button>
+            </div>
+            <div class="third-card">
+                <h3>Premium</h3>
+                <p>$60</p>
+                <img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
+                <p>2GB HDD</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
+                <p>5 subdomains</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
+                <p>20 E-mails</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
+                <p>Two years license</p><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
+                <p>Full suport</p>
+                <button>Begin</button>
+            </div>
+            <div class="contact">
+                <h2>Any questions?</h2>
+                <p>Leave your email address or call us!</p>
+                <a href="mailto:info@bestshop.xyz">info@bestshop.xyz</a></p>
+                <a href="tel:123456789">123456789</a></p>
+                <form action="contact.html" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email">
+                    <input type="checkbox">I hereby give consent for my personal data included in my application to be
+                    processed for the purposes of the recruitment process under the European Parliament’s and Council of
+                    the
+                    European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to
+                    the
+                    processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC
+                    (Data Protection Directive)</checkbox>
+                    <button>Send</button>
+                </form>
+            </div>
     </section>
     <footer>
         <div class="footer-text">
-        <h2>OXYGEN Shop</h2>
-        <p>© 2022 OXYGEN, All Rights Reserved</p>
-        <img src="resources\img\Facebook.png" alt="Facebook Icon">
-        <img src="resources\img\Twitter.png" alt="Twitter Icon">
+            <h2>OXYGEN Shop</h2>
+            <p>© 2022 OXYGEN, All Rights Reserved</p>
+            <img src="resources\img\Facebook.png" alt="Facebook Icon">
+            <img src="resources\img\Twitter.png" alt="Twitter Icon">
 
 </body>
 
