@@ -1,7 +1,6 @@
-@import "_fonts";
+@use "_variables" as *;
 
 .header {
-    position: fixed;
     height: 4.375rem;
 }
 
@@ -9,7 +8,7 @@
     font-family: $ralewayFont;
     font-size: 2rem;
     font-weight: 300;
-    color: #08A6E4;
+    color: $blue;
     margin-left: 1.5625rem;
     width: 60%;
     margin-top: 1.25rem;
