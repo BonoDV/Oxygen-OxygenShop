@@ -1,0 +1,150 @@
+@use "_variables" as *;
+
+/* Section style */
+@mixin sectionStyle($width, $height, $top, $color) {
+    width: $width;
+    height: $height;
+    top: $top;
+    background-color: $color;
+}
+
+.section__advantages {
+    @include sectionStyle(100%, 100%, 0, $section_advantages_bgColor);
+}
+
+/* Frames styles */
+@mixin frameStyle($width, $height, $top, $radius, $border, $color) {
+    width: $width;
+    height: $height;
+    top: $top;
+    border-radius: $radius;
+    border: $border;
+    background-color: $color;
+    position: relative;
+    margin: 2.625rem 1.9375rem 2.5625rem 1.875rem;
+}
+
+
+.section__advantages__first__frame {
+    @include frameStyle(19.625rem, 23.125rem, 1.25rem, .3125rem, 1px solid $white_advantages_frames_borderColor, $white_advantages_frames);
+}
+
+.section__advantages__second__frame {
+    @include frameStyle(19.6875rem, 23.125rem, auto, .3125rem, 1px solid $white_advantages_frames_borderColor, $white_advantages_frames);
+}
+
+.section__advantages__third__frame {
+    @include frameStyle(19.625rem, 18.625rem, auto, .3125rem, 1px solid $white_advantages_frames_borderColor, $white_advantages_frames);
+}
+
+/* Third frame extension style */
+@mixin extensionStyle($width, $height, $top, $bottom, $left) {
+    width: $width;
+    height: $height;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+}
+
+.section__advantages__third__frame__extension {
+    @include extensionStyle(19.625rem, 12.1875rem, auto, auto, auto);
+}
+
+/* Image styles */
+@mixin imageStyle($width, $height, $top, $left, $zIndex) {
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+    z-index: $zIndex;
+    position: relative;
+}
+
+.section__advantages__first__frame img {
+    @include imageStyle(12.0475rem, 6.8706rem, 2.3194rem, 4rem, 2);
+}
+
+.section__advantages__second__frame img {
+    @include imageStyle(12.0475rem, 6.8706rem, 3rem, 6rem, 2);
+}
+
+.section__advantages__third__frame__extension img {
+    @include imageStyle(18.4831rem, 12.9825rem, auto, 1.7rem, 2);
+    bottom: 1.25rem;
+}
+
+/* Ellipse styles*/
+@mixin ellipseStyle($width, $height, $bottom, $left, $radius, $rotation, $color) {
+    width: $width;
+    height: $height;
+    bottom: $bottom;
+    left: $left;
+    border-radius: $radius;
+    transform: rotate($rotation);
+    background-color: $color;
+    position: relative;
+}
+
+.section__advantages__first__frame__ellipse {
+    @include ellipseStyle(5.6325rem, 5.6325rem, 6.25rem, 12.5rem, 2.5625rem, 45deg, $red);
+}
+
+.section__advantages__second__frame__ellipse {
+    @include ellipseStyle(8.2425rem, 8.2312rem, 5.625rem, 6.25rem, 50%, 0deg, $blue);
+}
+
+.section__advantages__third__frame__extension__rectangle {
+    @include ellipseStyle(19.625rem, 12.1875rem, 16.25rem, 1.9rem, .3125rem, 1px solid $grey_border_color_third_frame_rectangle, $green);
+}
+
+/* Rectangle style (3rd frame) */
+@mixin rectangleStyle($width, $height, $top, $left, $radius, $border, $color) {
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+    border-radius: $radius;
+    border: $border;
+    background-color: $color;
+    position: relative;
+}
+
+
+
+/* Text styles */
+@mixin textStyle($width, $height, $bottom, $top, $left, $font, $size, $weight, $lineHeight) {
+    width: $width;
+    height: $height;
+    bottom: $bottom;
+    top: $top;
+    left: $left;
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    position: relative;
+}
+
+.section__advantages__first__frame h2 {
+    @include textStyle(12.375rem, 4.5rem, auto, auto, 1.375rem, $ralewayFont, 1.875rem, 400, 2.2012rem);
+}
+
+.section__advantages__first__frame p {
+    @include textStyle(17rem, 5.25rem, auto, auto, 1.3125rem, $openSansFont, .875rem, 400, 1.3125rem);
+}
+
+.section__advantages__second__frame h2 {
+    @include textStyle(13.625rem, 4.375rem, 4rem, auto, 1.375rem, $ralewayFont, 1.875rem, 400, 2.2012rem);
+}
+
+.section__advantages__second__frame p {
+    @include textStyle(17rem, 4.8125rem, 3rem, auto, 1.3125rem, $openSansFont, .875rem, 400, 1.1875rem);
+}
+
+.section__advantages__third__frame h2 {
+    @include textStyle(17.125rem, 6.8125rem, auto, 1rem, 1.375rem, $ralewayFont, 1.875rem, 400, 2.2012rem);
+}
+
+.section__advantages__third__frame p {
+    @include textStyle(17.125rem, 7.125rem, auto, 1.875rem, 1.3125rem, $openSansFont, 1rem, 400, 1.3619rem);
+}
