@@ -1,0 +1,28 @@
+@use "_variables" as *;
+@use "_section_frames" as sectionFrames;
+
+footer {
+    width: 100%;
+    height: 5.5625rem;
+    position: absolute;
+    box-shadow: 0px -5px 40px 0px #00000033;
+
+}
+
+.footer-text h2 {
+    @include sectionFrames.textStyle(12.5rem, 1.875rem, auto, 1.405rem, 1.0625rem, $ralewayFont, 1.625rem, 300,
+        1.875rem);
+    color: $blue;
+}
+
+.footer-text p {
+    @include sectionFrames.textStyle(11.6875rem, .9375rem, auto, 1.5rem, 1.0625rem, $openSansFont, .6875rem, 400,
+        .9363rem);
+    color: $grey_marketing;
+}
+
+.footer-text img {
+    position: relative;
+    left: 19rem;
+    margin-right: 0.7rem;
+}
