@@ -37,7 +37,6 @@
 .section__marketing {
   width: 100%;
   height: 100%;
-  border: 1px solid blue;
   padding-top: 6.25rem;
 }
 
@@ -111,7 +110,6 @@
   position: relative;
   width: 25rem;
   height: 10rem;
-  border: rgba(7, 172, 230, 0.2901960784) 3px solid;
 }
 
 .section__marketing__ellipse__div__blue__box {
@@ -119,7 +117,6 @@
   position: relative;
   width: 25rem;
   height: 10rem;
-  border: rgba(7, 172, 230, 0.2901960784) 3px solid;
 }
 
 .section__marketing__ellipse__div__green__box {
@@ -127,7 +124,6 @@
   position: relative;
   width: 25rem;
   height: 10rem;
-  border: rgba(7, 172, 230, 0.2901960784) 3px solid;
 }
 
 /* Styles of the ellipse and icon box */
