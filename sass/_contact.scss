@@ -1,2 +1,110 @@
-@use "variables" as *;
+@use "_variables" as *;
+@use "_section_frames" as sectionFrames;
+@use "_section_cards" as sectionCards;
 
+.section__contact {
+    height: 30rem;
+}
+
+/* H2 Style */
+.section__contact__div h2 {
+    @include sectionFrames.textStyle(17.5rem, 2.9375rem, auto, auto, 2rem, $ralewayFont, 2.5rem, 400, 2.9181rem);
+}
+
+/* P Style */
+.section__contact__div p:not(p[class="section__contact__div__consent"]) {
+    @include sectionFrames.textStyle(19.5rem, 1.375rem, auto, auto, 2rem, $openSansFont, 1rem, 400, 1.375rem);
+}
+
+/* Image Style */
+.section__contact__div img {
+    @include sectionFrames.imageStyle(1.6875rem, 1.6875rem, auto, 2rem, auto);
+}
+
+/* Href Style */
+.section__contact__div a {
+    text-decoration: none;
+}
+
+/* P Href Style */
+.section__contact__div a p {
+    @include sectionFrames.textStyle(9.0625rem, 1.375rem, auto, auto, 2.1619rem, $openSansFont, 1rem,
+        600, 1.375rem);
+    color: $grey_marketing;
+    display: inline-block;
+}
+
+/* Form Style*/
+@mixin formStyle($width, $height, $top, $left, $bottom) {
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    position: relative;
+}
+
+.section__contact__div form {
+    @include formStyle(19.5rem, 9.8125rem, 2rem, 1.875rem, auto);
+}
+
+/* Label Style */
+.section__contact__div label {
+    @include sectionFrames.textStyle(auto, auto, auto, 0.8rem, auto, $openSansFont, .6875rem, 600, .9363rem);
+    color: $blue;
+}
+
+/* Input Style */
+@mixin inputStyle($width, $height, $top, $left, $bottom, $font, $size, $weight, $lineHeight, $color, $border) {
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    color: $color;
+    border: $border;
+    position: relative;
+}
+
+.section__contact__div input {
+    @include inputStyle(19.5rem, 0rem, 0.8rem, auto, auto, $openSansFont, 1rem, 400, 22px, $grey_marketing, 1px solid $section_input_underline);
+}
+
+/* Consent Style */
+.section__contact__div input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 2rem;
+    left: auto;
+    bottom: auto;
+    position: relative;
+    appearance: none;
+}
+
+.section__contact__div input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-image: url(../resources/svg/Checkmark.svg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section__contact__div__consent {
+    @include sectionFrames.textStyle(17.3125rem, 9rem, auto, auto, 2.5rem, $openSansFont, .75rem, 400, 1.04rem);
+    color: $text_consent;
+}
+
+/* Button Style */
+.section__contact__div__form__button {
+    @include sectionCards.buttonStyle(14.125rem, 3.5625rem, auto, 3rem, auto, $openSansFont, .8125rem, 700, 1.1062rem, $white_advantages_frames, $blue, none, 2.5rem);
+}

@@ -764,6 +764,167 @@
   position: relative;
 }
 
+.section__contact {
+  height: 30rem;
+}
+
+/* H2 Style */
+.section__contact__div h2 {
+  width: 17.5rem;
+  height: 2.9375rem;
+  bottom: auto;
+  top: auto;
+  left: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2.9181rem;
+  position: relative;
+}
+
+/* P Style */
+.section__contact__div p:not(p[class=section__contact__div__consent]) {
+  width: 19.5rem;
+  height: 1.375rem;
+  bottom: auto;
+  top: auto;
+  left: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  position: relative;
+}
+
+/* Image Style */
+.section__contact__div img {
+  width: 1.6875rem;
+  height: 1.6875rem;
+  top: auto;
+  left: 2rem;
+  z-index: auto;
+  position: relative;
+}
+
+/* Href Style */
+.section__contact__div a {
+  text-decoration: none;
+}
+
+/* P Href Style */
+.section__contact__div a p {
+  width: 9.0625rem;
+  height: 1.375rem;
+  bottom: auto;
+  top: auto;
+  left: 2.1619rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  position: relative;
+  color: #A5A5A5;
+  display: inline-block;
+}
+
+/* Form Style*/
+.section__contact__div form {
+  width: 19.5rem;
+  height: 9.8125rem;
+  top: 2rem;
+  left: 1.875rem;
+  bottom: auto;
+  position: relative;
+}
+
+/* Label Style */
+.section__contact__div label {
+  width: auto;
+  height: auto;
+  bottom: auto;
+  top: 0.8rem;
+  left: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 0.9363rem;
+  position: relative;
+  color: #08A6E4;
+}
+
+/* Input Style */
+.section__contact__div input {
+  width: 19.5rem;
+  height: 0rem;
+  top: 0.8rem;
+  left: auto;
+  bottom: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+  color: #A5A5A5;
+  border: 1px solid #95989A;
+  position: relative;
+}
+
+/* Consent Style */
+.section__contact__div input[type=checkbox] {
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 2rem;
+  left: auto;
+  bottom: auto;
+  position: relative;
+  appearance: none;
+}
+
+.section__contact__div input[type=checkbox]:checked::after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-image: url(../resources/svg/Checkmark.svg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section__contact__div__consent {
+  width: 17.3125rem;
+  height: 9rem;
+  bottom: auto;
+  top: auto;
+  left: 2.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.04rem;
+  position: relative;
+  color: #707070;
+}
+
+/* Button Style */
+.section__contact__div__form__button {
+  width: 14.125rem;
+  height: 3.5625rem;
+  top: auto;
+  left: 3rem;
+  bottom: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.1062rem;
+  color: #FFFFFF;
+  background-color: #08A6E4;
+  border: none;
+  border-radius: 2.5rem;
+  position: relative;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
