@@ -274,6 +274,19 @@
   bottom: 3.5rem;
 }
 
+/* Styles of the hr */
+.section__advantages__first__frame hr {
+  display: none;
+}
+
+.section__advantages__second__frame hr {
+  display: none;
+}
+
+.section__advantages__third__frame hr {
+  display: none;
+}
+
 /* Section style */
 .section__advantages {
   width: 100%;
