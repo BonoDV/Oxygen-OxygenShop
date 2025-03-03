@@ -472,6 +472,289 @@
   position: relative;
 }
 
+/* Text styles */
+.section__cards__pricing h2 {
+  width: 7.125rem;
+  height: 2.625rem;
+  bottom: auto;
+  top: 1rem;
+  left: 8rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 2.6412rem;
+  position: relative;
+}
+
+/* Pricing card style */
+.section__cards__pricing__first-card {
+  width: 18.3125rem;
+  height: 15.6875rem;
+  top: auto;
+  left: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 1.125rem;
+  border: 1px solid #FB3B64;
+  margin-top: 1.875rem;
+  position: relative;
+}
+
+.section__cards__pricing__second-card {
+  width: 18.3125rem;
+  height: 15.6875rem;
+  top: auto;
+  left: 3rem;
+  margin-bottom: 4rem;
+  border-radius: 1.125rem;
+  border: 1px solid #08A6E4;
+  margin-top: 1.875rem;
+  position: relative;
+}
+
+.section__cards__pricing__third-card {
+  width: 18.3125rem;
+  height: 15.6875rem;
+  top: auto;
+  left: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 1.125rem;
+  border: 1px solid #55DFB4;
+  margin-top: 1.875rem;
+  position: relative;
+}
+
+/* First cards style (h3, p) */
+.section__cards__pricing__first-card h3 {
+  width: 3.25rem;
+  height: 1.5rem;
+  top: 4.375rem;
+  left: 3.125rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #13253B;
+  position: relative;
+}
+
+.section__cards__pricing__first-card-pPrice {
+  width: 3.6875rem;
+  height: 4rem;
+  top: 4rem;
+  left: 2.8125rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.875rem;
+  font-weight: 300;
+  line-height: 4rem;
+  color: #FB3B64;
+  position: relative;
+}
+
+.section__cards__pricing__second-card h3 {
+  width: 3.25rem;
+  height: 1.5rem;
+  top: 4.375rem;
+  left: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #13253B;
+  position: relative;
+}
+
+.section__cards__pricing__second-card__pPrice {
+  width: 3.6875rem;
+  height: 4rem;
+  top: 4rem;
+  left: 2.8125rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.875rem;
+  font-weight: 300;
+  line-height: 4rem;
+  color: #08A6E4;
+  position: relative;
+}
+
+.section__cards__pricing__second-card__pLo {
+  width: 4.625rem;
+  height: 0.875rem;
+  top: 5rem;
+  left: 3.1875rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.8806rem;
+  color: #13253B;
+  position: relative;
+}
+
+.section__cards__pricing__third-card h3 {
+  width: 3.25rem;
+  height: 1.5rem;
+  top: 4.375rem;
+  left: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #13253B;
+  position: relative;
+}
+
+.section__cards__pricing__third-card__pPrice {
+  width: 3.6875rem;
+  height: 4rem;
+  top: 4rem;
+  left: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.875rem;
+  font-weight: 300;
+  line-height: 4rem;
+  color: #55DFB4;
+  position: relative;
+}
+
+.section__cards__pricing__third-card__pLo {
+  width: 4.625rem;
+  height: 0.875rem;
+  top: 5rem;
+  left: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.8806rem;
+  color: #13253B;
+  position: relative;
+}
+
+/* List cards style */
+.section__cards__pricing__first-card ul {
+  width: 8.5rem;
+  height: 8rem;
+  top: auto;
+  bottom: 4rem;
+  left: 8rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.1919rem;
+  color: #000000;
+  list-style: none;
+  position: relative;
+}
+
+.section__cards__pricing__second-card ul {
+  width: 8.5rem;
+  height: 8rem;
+  top: auto;
+  bottom: 4rem;
+  left: 10rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.1919rem;
+  color: #000000;
+  list-style: none;
+  position: relative;
+}
+
+.section__cards__pricing__third-card ul {
+  width: 8.5rem;
+  height: 8rem;
+  top: auto;
+  bottom: 4rem;
+  left: 10rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.1919rem;
+  color: #000000;
+  list-style: none;
+  position: relative;
+}
+
+/* Li */
+.section__cards__pricing__first-card ul li {
+  margin-bottom: 0.9rem;
+}
+
+.section__cards__pricing__second-card ul li {
+  margin-bottom: 0.9rem;
+}
+
+.section__cards__pricing__third-card ul li {
+  margin-bottom: 0.9rem;
+}
+
+/* Li p */
+.section__cards__pricing__first-card ul li p {
+  margin-left: 0.2rem;
+  display: inline-block;
+}
+
+.section__cards__pricing__second-card ul li p {
+  margin-left: 0.2rem;
+  display: inline-block;
+}
+
+.section__cards__pricing__third-card ul li p {
+  margin-left: 0.2rem;
+  display: inline-block;
+}
+
+/* Button style */
+.section__cards__pricing__first-card__bt {
+  width: 9.375rem;
+  height: 3.125rem;
+  top: 0.5rem;
+  left: 4rem;
+  bottom: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.1062rem;
+  color: #FFFFFF;
+  background-color: #FB3B64;
+  border: 2.5rem;
+  border-radius: 1.4375rem;
+  position: relative;
+}
+
+.section__cards__pricing__second-card__bt {
+  width: 9.375rem;
+  height: 3.125rem;
+  top: auto;
+  left: 4rem;
+  bottom: 0.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.1062rem;
+  color: #FFFFFF;
+  background-color: #08A6E4;
+  border: 2.5rem;
+  border-radius: 1.4375rem;
+  position: relative;
+}
+
+.section__cards__pricing__third-card__bt {
+  width: 9.375rem;
+  height: 3.125rem;
+  top: auto;
+  left: 4rem;
+  bottom: 0.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.1062rem;
+  color: #FFFFFF;
+  background-color: #55DFB4;
+  border: 2.5rem;
+  border-radius: 1.4375rem;
+  position: relative;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

@@ -1,0 +1,185 @@
+@use "_variables" as *;
+
+/* Text styles */
+@mixin textStyle($width, $height, $bottom, $top, $left, $font, $size, $weight, $lineHeight) {
+    width: $width;
+    height: $height;
+    bottom: $bottom;
+    top: $top;
+    left: $left;
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    position: relative;
+}
+
+.section__cards__pricing h2 {
+    @include textStyle(7.125rem, 2.625rem, auto, 1rem, 8rem, $ralewayFont, 2.25rem, 400, 2.6412rem);
+}
+
+/* Pricing card style */
+@mixin pricingCardStyle($width, $height, $top, $left, $marginBottom, $radius, $border) {
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+    margin-bottom: $marginBottom;
+    border-radius: $radius;
+    border: $border;
+    margin-top: 1.875rem;
+    position: relative;
+}
+
+.section__cards__pricing__first-card {
+    @include pricingCardStyle(18.3125rem, 15.6875rem, auto, 3rem, 3rem, 1.125rem, 1px solid $red);
+}
+
+.section__cards__pricing__second-card {
+    @include pricingCardStyle(18.3125rem, 15.6875rem, auto, 3rem, 4rem, 1.125rem, 1px solid $blue);
+
+}
+
+.section__cards__pricing__third-card {
+    @include pricingCardStyle(18.3125rem, 15.6875rem, auto, 3rem, 3rem, 1.125rem, 1px solid $green);
+}
+
+/* First cards style (h3, p) */
+@mixin firstCardStyle($width, $height, $top, $left, $font, $size, $weight, $lineHeight, $color) {
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    color: $color;
+    position: relative;
+}
+
+.section__cards__pricing__first-card h3 {
+    @include firstCardStyle(3.25rem, 1.5rem, 4.375rem, 3.125rem, $ralewayFont, 1.25rem, 700, 1.5rem, $section_cards_pColor);
+}
+
+.section__cards__pricing__first-card-pPrice {
+    @include firstCardStyle(3.6875rem, 4rem, 4rem, 2.8125rem, $openSansFont, 2.875rem, 300, 4rem, $red);
+}
+
+.section__cards__pricing__second-card h3 {
+    @include firstCardStyle(3.25rem, 1.5rem, 4.375rem, 1.5rem, $ralewayFont, 1.25rem, 700, 1.5rem, $section_cards_pColor);
+}
+
+.section__cards__pricing__second-card__pPrice {
+    @include firstCardStyle(3.6875rem, 4rem, 4rem, 2.8125rem, $openSansFont, 2.875rem, 300, 4rem, $blue);
+}
+
+.section__cards__pricing__second-card__pLo {
+    @include firstCardStyle(4.625rem, .875rem, 5rem, 3.1875rem, $ralewayFont, .75rem, 700, .8806rem, $section_cards_pColor);
+}
+
+.section__cards__pricing__third-card h3 {
+    @include firstCardStyle(3.25rem, 1.5rem, 4.375rem, 1.5rem, $ralewayFont, 1.25rem, 700, 1.5rem, $section_cards_pColor);
+}
+
+.section__cards__pricing__third-card__pPrice {
+    @include firstCardStyle(3.6875rem, 4rem, 4rem, 1.5rem, $openSansFont, 2.875rem, 300, 4rem, $green);
+}
+
+.section__cards__pricing__third-card__pLo {
+    @include firstCardStyle(4.625rem, .875rem, 5rem, 2rem, $ralewayFont, .75rem, 700, .8806rem, $section_cards_pColor);
+}
+
+/* List cards style */
+@mixin listCardStyle($width, $height, $top, $bottom, $left, $font, $size, $weight, $lineHeight, $color) {
+    width: $width;
+    height: $height;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    color: $color;
+    list-style: none;
+    position: relative;
+}
+
+.section__cards__pricing__first-card ul {
+    @include listCardStyle(8.5rem, 8rem, auto, 4rem, 8rem, $openSansFont, .875rem, 400, 1.1919rem, $black);
+}
+
+.section__cards__pricing__second-card ul {
+    @include listCardStyle(8.5rem, 8rem, auto, 4rem, 10rem, $openSansFont, .875rem, 400, 1.1919rem, $black);
+}
+
+.section__cards__pricing__third-card ul {
+    @include listCardStyle(8.5rem, 8rem, auto, 4rem, 10rem, $openSansFont, .875rem, 400, 1.1919rem, $black);
+}
+
+/* Li */
+
+@mixin liStyle() {
+    margin-bottom: 0.9rem;
+}
+
+.section__cards__pricing__first-card ul li {
+    @include liStyle();
+}
+
+.section__cards__pricing__second-card ul li {
+    @include liStyle();
+}
+
+.section__cards__pricing__third-card ul li {
+    @include liStyle();
+}
+
+/* Li p */
+@mixin liPStyle() {
+    margin-left: 0.2rem;
+    display: inline-block;
+}
+
+.section__cards__pricing__first-card ul li p {
+    @include liPStyle();
+}
+
+.section__cards__pricing__second-card ul li p {
+    @include liPStyle();
+}
+
+.section__cards__pricing__third-card ul li p {
+    @include liPStyle();
+}
+
+/* Button style */
+@mixin buttonStyle($width, $height, $top, $left, $bottom, $font, $size, $weight, $lineHeight, $color, $bgColor, $border, $radius) {
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    color: $color;
+    background-color: $bgColor;
+    border: $border;
+    border-radius: $radius;
+    position: relative;
+}
+
+.section__cards__pricing__first-card__bt {
+    @include buttonStyle(9.375rem, 3.125rem, 0.5rem, 4rem, auto, $openSansFont, .8125rem, 700, 1.1062rem, $white_advantages_frames, $red, 2.5rem, 1.4375rem);
+}
+
+.section__cards__pricing__second-card__bt {
+    @include buttonStyle(9.375rem, 3.125rem, auto, 4rem, 0.2rem, $openSansFont, .8125rem, 700, 1.1062rem, $white_advantages_frames, $blue, 2.5rem, 1.4375rem);
+}
+
+.section__cards__pricing__third-card__bt {
+    @include buttonStyle(9.375rem, 3.125rem, auto, 4rem, 0.2rem, $openSansFont, .8125rem, 700, 1.1062rem, $white_advantages_frames, $green, 2.5rem, 1.4375rem);
+}
