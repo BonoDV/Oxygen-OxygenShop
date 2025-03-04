@@ -2,7 +2,7 @@
 
 .header {
     height: 4.375rem;
-    box-shadow: 0px 3px 6px 0px #0000004A;
+    box-shadow: 0px 3px 3px 0px #0000004A;
 
 }
 
@@ -30,9 +30,7 @@
     display: none;
 }
 
-.header__hr {
-    box-shadow: 0rem 0.1875rem 0.375rem 0rem #0000004A;
-}
+
 
 /* Desktop */
 @media screen and (min-width: 768px) {
@@ -61,7 +59,9 @@
 
     .header__nav__list li {
         list-style: none;
-        margin-right: 2.5rem;
+        margin-right: 5rem;
+        position: relative;
+        /* Necesario para posicionar la barra */
     }
 
     .header__nav__list li a {
@@ -71,5 +71,32 @@
         line-height: .9375rem;
         color: $black;
         text-decoration: none;
+        display: inline-block;
+        /* Asegura que el span ocupe el ancho del texto */
+    }
+
+    .header__nav__list li a:hover {
+        color: $blue;
+    }
+
+    .header__nav__list__list__item .underline {
+        display: block;
+        width: 0;
+        /* Inicialmente la barra no tiene ancho */
+        height: .25rem;
+        /* Altura de la barra */
+        background-color: $blue;
+        /* Color de la barra */
+        position: absolute;
+        bottom: -1.6rem;
+        /* Posición debajo del texto */
+        left: -0.625rem;
+        transition: width 0.3s ease;
+        /* Animación suave */
+    }
+
+    .header__nav__list__list__item:hover .underline {
+        width: 150%;
+        /* La barra se expande al 100% del ancho del texto */
     }
 }
