@@ -92,259 +92,6 @@
     /* La barra se expande al 100% del ancho del texto */
   }
 }
-.section__marketing {
-  width: 100%;
-  height: 100%;
-  padding-top: 6.25rem;
-}
-
-.section__marketing__h1 {
-  font-family: "Raleway", sans-serif;
-  width: 11.25rem;
-  height: 2.5625rem;
-  font-weight: 400;
-  font-size: 2.1875rem;
-  position: relative;
-  left: 7rem;
-}
-
-.section__marketing__p {
-  width: 20.125rem;
-  height: 2.5625rem;
-  font-weight: 25rem;
-  font-size: 1.125rem;
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-}
-
-.section__marketing__btn {
-  width: 19.375rem;
-  height: 4.1875rem;
-  background-color: #08A6E4;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  line-height: 1.375rem;
-  font-weight: 700;
-  border: none;
-  margin: 0 auto;
-  display: block;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  cursor: pointer;
-  border-radius: 2.5rem;
-  box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
-}
-
-.section__marketing__img {
-  width: 48.6875rem;
-  height: 16.6875rem;
-  position: relative;
-  left: -12.5938rem;
-}
-
-.section__marketing__container {
-  width: 18.9375rem;
-  height: 7rem;
-}
-
-.section__marketing__containerh2__h2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  font-size: 1.875rem;
-  line-height: 2.1875rem;
-  text-align: center;
-}
-
-.section__marketing__icons {
-  width: 2.75rem;
-  height: 3.25rem;
-}
-
-/* Ellipse divs */
-.section__marketing__ellipse__div__red__box {
-  display: block;
-  position: relative;
-  width: 25rem;
-  height: 10rem;
-}
-
-.section__marketing__ellipse__div__blue__box {
-  display: block;
-  position: relative;
-  width: 25rem;
-  height: 10rem;
-}
-
-.section__marketing__ellipse__div__green__box {
-  display: block;
-  position: relative;
-  width: 25rem;
-  height: 10rem;
-}
-
-/* Styles of the ellipse and icon box */
-.section__marketing__ellipse__div__red--ellipse {
-  border: 1px solid red;
-  width: 3.9194rem;
-  position: absolute;
-  bottom: 2.5rem;
-  left: 1.25rem;
-  z-index: 1;
-}
-
-.section__marketing__ellipse__div__blue--ellipse {
-  border: 1px solid red;
-  width: 3.9194rem;
-  position: absolute;
-  bottom: 2.5rem;
-  left: 1.25rem;
-  z-index: 1;
-}
-
-.section__marketing__ellipse__div__green--ellipse {
-  border: 1px solid red;
-  width: 3.9194rem;
-  position: absolute;
-  bottom: 2.5rem;
-  left: 1.25rem;
-  z-index: 1;
-}
-
-/* Ellipse styles */
-.section__marketing__ellipse__div__red--ellipse {
-  width: 3.9194rem;
-  height: 3.9194rem;
-  background-color: #FB3B64;
-  border-radius: 50%;
-  position: relative;
-  left: 10.5rem;
-  top: 1.25rem;
-}
-
-.section__marketing__ellipse__div__blue--ellipse2 {
-  width: 3.9194rem;
-  height: 3.9194rem;
-  background-color: #08A6E4;
-  border-radius: 50%;
-  position: relative;
-  left: 10.5rem;
-  top: 1.25rem;
-}
-
-.section__marketing__ellipse__div__green--ellipse3 {
-  width: 3.9194rem;
-  height: 3.9194rem;
-  background-color: #55DFB4;
-  border-radius: 50%;
-  position: relative;
-  left: 10.5rem;
-  top: 1.25rem;
-}
-
-/* Styles of the icon */
-.section__marketing__ellipse__div__red__icon__box__icon {
-  content: url("../resources/svg/Person2.svg");
-  width: 2.75rem;
-  height: 3.25rem;
-  position: absolute;
-  left: 12rem;
-  top: 1rem;
-  z-index: 2;
-}
-
-.section__marketing__ellipse__div__blue__icon__box__icon {
-  content: url("../resources/svg/Eye2.svg");
-  width: 4.0894rem;
-  height: 2.2813rem;
-  position: absolute;
-  left: 12rem;
-  top: 2rem;
-  z-index: 2;
-}
-
-.section__marketing__ellipse__div__green__icon__box__icon {
-  content: url("../resources/svg/Catalog2.svg");
-  width: 3.25rem;
-  height: 3rem;
-  position: absolute;
-  left: 12rem;
-  top: 1.8rem;
-  z-index: 2;
-}
-
-/* Styles of the number entries */
-.section__marketing__ellipse__div__red__numberEntries--p1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 1.25rem;
-  text-align: center;
-  position: relative;
-  bottom: 3.5rem;
-}
-
-.section__marketing__ellipse__div__blue__numberEntries--p1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 1.25rem;
-  text-align: center;
-  position: relative;
-  bottom: 3.5rem;
-}
-
-.section__marketing__ellipse__div__green__numberEntries--p1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 1.25rem;
-  text-align: center;
-  position: relative;
-  bottom: 3.5rem;
-}
-
-.section__marketing__ellipse__div__red__numberEntries--p2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 1.0625rem;
-  color: #A5A5A5;
-  text-align: center;
-  position: relative;
-  bottom: 3.5rem;
-}
-
-.section__marketing__ellipse__div__blue__numberEntries--p2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 1.0625rem;
-  color: #A5A5A5;
-  text-align: center;
-  position: relative;
-  bottom: 3.5rem;
-}
-
-.section__marketing__ellipse__div__green__numberEntries--p2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 1.0625rem;
-  color: #A5A5A5;
-  text-align: center;
-  position: relative;
-  bottom: 3.5rem;
-}
-
-/* Styles of the hr */
-.section__advantages__first__frame hr {
-  display: none;
-}
-
-.section__advantages__second__frame hr {
-  display: none;
-}
-
-.section__advantages__third__frame hr {
-  display: none;
-}
-
 /* Section style */
 .section__advantages {
   width: 100%;
@@ -822,6 +569,312 @@
   position: relative;
 }
 
+.section__marketing {
+  width: 100%;
+  height: 100%;
+  padding-top: 6.25rem;
+}
+
+.section__marketing__h1 {
+  font-family: "Raleway", sans-serif;
+  width: 11.25rem;
+  height: 2.5625rem;
+  font-weight: 400;
+  font-size: 2.1875rem;
+  position: relative;
+  left: 7rem;
+}
+
+.section__marketing__p {
+  width: 20.125rem;
+  height: 2.5625rem;
+  font-weight: 25rem;
+  font-size: 1.125rem;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section__marketing__btn {
+  width: 19.375rem;
+  height: 4.1875rem;
+  background-color: #08A6E4;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  cursor: pointer;
+  border-radius: 2.5rem;
+  box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
+}
+
+.section__marketing__img {
+  width: 48.6875rem;
+  height: 16.6875rem;
+  position: relative;
+  left: -12.5938rem;
+}
+
+.section__marketing__container {
+  width: 18.9375rem;
+  height: 7rem;
+}
+
+.section__marketing__containerh2__h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1.875rem;
+  line-height: 2.1875rem;
+  text-align: center;
+}
+
+.section__marketing__icons {
+  width: 2.75rem;
+  height: 3.25rem;
+}
+
+/* Ellipse divs */
+.section__marketing__ellipse__div__red__box {
+  display: block;
+  position: relative;
+  width: 25rem;
+  height: 10rem;
+}
+
+.section__marketing__ellipse__div__blue__box {
+  display: block;
+  position: relative;
+  width: 25rem;
+  height: 10rem;
+}
+
+.section__marketing__ellipse__div__green__box {
+  display: block;
+  position: relative;
+  width: 25rem;
+  height: 10rem;
+}
+
+/* Styles of the ellipse and icon box */
+.section__marketing__ellipse__div__red--ellipse {
+  border: 1px solid red;
+  width: 3.9194rem;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 1.25rem;
+  z-index: 1;
+}
+
+.section__marketing__ellipse__div__blue--ellipse {
+  border: 1px solid red;
+  width: 3.9194rem;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 1.25rem;
+  z-index: 1;
+}
+
+.section__marketing__ellipse__div__green--ellipse {
+  border: 1px solid red;
+  width: 3.9194rem;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 1.25rem;
+  z-index: 1;
+}
+
+/* Ellipse styles */
+.section__marketing__ellipse__div__red--ellipse {
+  width: 3.9194rem;
+  height: 3.9194rem;
+  background-color: #FB3B64;
+  border-radius: 50%;
+  position: relative;
+  left: 10.5rem;
+  top: 1.25rem;
+}
+
+.section__marketing__ellipse__div__blue--ellipse2 {
+  width: 3.9194rem;
+  height: 3.9194rem;
+  background-color: #08A6E4;
+  border-radius: 50%;
+  position: relative;
+  left: 10.5rem;
+  top: 1.25rem;
+}
+
+.section__marketing__ellipse__div__green--ellipse3 {
+  width: 3.9194rem;
+  height: 3.9194rem;
+  background-color: #55DFB4;
+  border-radius: 50%;
+  position: relative;
+  left: 10.5rem;
+  top: 1.25rem;
+}
+
+/* Styles of the icon */
+.section__marketing__ellipse__div__red__icon__box__icon {
+  content: url("../resources/svg/Person2.svg");
+  width: 2.75rem;
+  height: 3.25rem;
+  position: absolute;
+  left: 12rem;
+  top: 1rem;
+  z-index: 2;
+}
+
+.section__marketing__ellipse__div__blue__icon__box__icon {
+  content: url("../resources/svg/Eye2.svg");
+  width: 4.0894rem;
+  height: 2.2813rem;
+  position: absolute;
+  left: 12rem;
+  top: 2rem;
+  z-index: 2;
+}
+
+.section__marketing__ellipse__div__green__icon__box__icon {
+  content: url("../resources/svg/Catalog2.svg");
+  width: 3.25rem;
+  height: 3rem;
+  position: absolute;
+  left: 12rem;
+  top: 1.8rem;
+  z-index: 2;
+}
+
+/* Styles of the number entries */
+.section__marketing__ellipse__div__red__numberEntries--p1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-align: center;
+  position: relative;
+  bottom: 3.5rem;
+}
+
+.section__marketing__ellipse__div__blue__numberEntries--p1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-align: center;
+  position: relative;
+  bottom: 3.5rem;
+}
+
+.section__marketing__ellipse__div__green__numberEntries--p1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-align: center;
+  position: relative;
+  bottom: 3.5rem;
+}
+
+.section__marketing__ellipse__div__red__numberEntries--p2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: #A5A5A5;
+  text-align: center;
+  position: relative;
+  bottom: 3.5rem;
+}
+
+.section__marketing__ellipse__div__blue__numberEntries--p2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: #A5A5A5;
+  text-align: center;
+  position: relative;
+  bottom: 3.5rem;
+}
+
+.section__marketing__ellipse__div__green__numberEntries--p2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: #A5A5A5;
+  text-align: center;
+  position: relative;
+  bottom: 3.5rem;
+}
+
+/* Styles of the hr */
+.section__advantages__first__frame hr {
+  display: none;
+}
+
+.section__advantages__second__frame hr {
+  display: none;
+}
+
+.section__advantages__third__frame hr {
+  display: none;
+}
+
+/* Desktop version */
+@media screen and (min-width: 768px) {
+  .section__marketing__h1 {
+    width: 14.125rem;
+    height: 3.5625rem;
+    bottom: auto;
+    top: auto;
+    left: 44%;
+    font-family: "Raleway", sans-serif;
+    font-size: 3.0625rem;
+    font-weight: 400;
+    line-height: 3.5625rem;
+    position: relative;
+  }
+  .section__marketing__p {
+    width: 30rem;
+    height: 1.375rem;
+    bottom: auto;
+    top: auto;
+    left: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    position: relative;
+  }
+  .section__marketing__btn {
+    width: 27.5rem;
+    height: 4.1875rem;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+    color: #FFFFFF;
+    background-color: #08A6E4;
+    border: 2.5rem;
+    border-radius: 1.4375rem;
+    position: relative;
+  }
+  .section__marketing__img {
+    width: 110%;
+    height: 20%;
+    position: relative;
+  }
+  .section_marketing__ellipse__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+}
 .section__contact {
   height: 30rem;
 }
@@ -1032,6 +1085,7 @@ footer {
 
 body {
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
