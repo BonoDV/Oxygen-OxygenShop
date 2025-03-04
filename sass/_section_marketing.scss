@@ -206,22 +206,7 @@
     @include numberEntries2-style();
 }
 
-/* Styles of the hr */
-@mixin hr-style () {
-    display: none;
-}
 
-.section__advantages__first__frame hr {
-    @include hr-style();
-}
-
-.section__advantages__second__frame hr {
-    @include hr-style();
-}
-
-.section__advantages__third__frame hr {
-    @include hr-style();
-}
 
 
 /* Desktop version */
