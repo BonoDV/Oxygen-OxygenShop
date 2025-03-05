@@ -44,13 +44,14 @@
     position: relative;
 }
 
-.section__contact__div form {
+.section__contact__div__form form {
     @include formStyle(19.5rem, 9.8125rem, 2rem, 1.875rem, auto);
 }
 
 /* Label Style */
-.section__contact__div label {
-    @include sectionFrames.textStyle(auto, auto, auto, 0.8rem, auto, $openSansFont, .6875rem, 600, .9363rem);
+.section__contact__div__form label {
+    @include sectionFrames.textStyle(auto, auto, auto, 2rem, auto, $openSansFont, .6875rem, 600, .9363rem);
+    display: block;
     color: $blue;
 }
 
@@ -70,12 +71,13 @@
     position: relative;
 }
 
-.section__contact__div input {
-    @include inputStyle(19.5rem, 0rem, 0.8rem, auto, auto, $openSansFont, 1rem, 400, 22px, $grey_marketing, 1px solid $section_input_underline);
+.section__contact__div__form input {
+    @include inputStyle(19.5rem, 2rem, 0.8rem, auto, auto, $openSansFont, 1rem, 400, 22px, $grey_marketing, none);
+    border-bottom: 1px solid $section_input_underline;
 }
 
 /* Consent Style */
-.section__contact__div input[type="checkbox"] {
+.section__contact__div__form input[type="checkbox"] {
     width: 1.5rem;
     height: 1.5rem;
     top: 2rem;
@@ -83,9 +85,10 @@
     bottom: auto;
     position: relative;
     appearance: none;
+    border: 1px solid $section_input_underline;
 }
 
-.section__contact__div input[type="checkbox"]:checked::after {
+.section__contact__div__form input[type="checkbox"]:checked::after {
     content: "";
     display: block;
     width: 13px;
@@ -107,4 +110,81 @@
 /* Button Style */
 .section__contact__div__form__button {
     @include sectionCards.buttonStyle(14.125rem, 3.5625rem, auto, 3rem, auto, $openSansFont, .8125rem, 700, 1.1062rem, $white_advantages_frames, $blue, none, 2.5rem);
+    margin-bottom: 2.75rem;
+}
+
+
+/* Desktop version */
+@media screen and (min-width: 768px) {
+    .section__contact {
+        width: 55%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .section__contact__div h2 {
+        height: 3.5625rem;
+        width: 21.4375rem;
+    }
+
+    .section__contact__div p:not(p[class=section__contact__div__consent]):not(p[class=section__contact__div__p]) {
+        top: 18%;
+    }
+
+    .section__contact__div p:not(p[class=section__contact__div__consent]) {
+        width: 21.4375rem;
+        top: 7%;
+    }
+
+    .section__contact__div a[href="tel:123456789"] {
+        position: relative;
+        left: 60%;
+        bottom: 6.5%;
+    }
+
+    .section__contact__div img {
+        top: 20%;
+    }
+
+    .section__contact__div__form form {
+        width: 27.5rem;
+        height: 9.8125rem;
+        top: auto;
+        left: 70%;
+    }
+
+    .section__contact__div__form label {
+        position: relative;
+        top: 1.5rem;
+        left: 0.8rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .section__contact__div__form input:not([type="checkbox"]) {
+        width: 27.5rem;
+        height: 2rem;
+        top: 1.5rem;
+        left: 0.8rem;
+        margin-bottom: 1.25rem;
+        border: none;
+        border-bottom: 1px solid #95989A
+    }
+
+    .section__contact__div__form input[type=checkbox] {
+        left: .9375rem;
+
+    }
+
+    .section__contact__div__consent {
+        width: 25.3125rem;
+        height: 6.75rem;
+        left: 3rem
+    }
+
+    .section__contact__div__form__button {
+        width: 14.125rem;
+        height: 3.5625rem;
+        left: 13rem;
+    }
 }
