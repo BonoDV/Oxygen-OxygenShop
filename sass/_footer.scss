@@ -27,3 +27,21 @@ footer {
     margin-right: 0.7rem;
     bottom: 17px;
 }
+
+/* Deskop version */
+@media screen and (min-width: 768px) {
+
+    .footer-text h2,
+    .footer-text p {
+        position: relative;
+        left: 8.5625rem;
+    }
+
+    .footer-text img {
+        position: relative;
+        left: 98rem;
+        bottom: 0.7rem;
+    }
+
+
+}

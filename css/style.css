@@ -307,12 +307,13 @@
     align-items: center;
   }
   .section__advantages__first__frame,
-  .section__advantages__second__frame,
-  .section__advantages__third__frame {
+  .section__advantages__second__frame {
     width: 60%;
   }
   .section__advantages__third__frame {
     height: 23.125rem;
+    width: 33%;
+    right: 15.9rem;
   }
   .section__advantages__first__frame img {
     width: 24.1525rem;
@@ -394,7 +395,7 @@
     width: 27.5rem;
     height: 23.125rem;
     z-index: 0;
-    left: 90%;
+    left: 93%;
     bottom: 381%;
   }
   .section__advantages__third__frame h2 {
@@ -1389,6 +1390,19 @@ footer {
   bottom: 17px;
 }
 
+/* Deskop version */
+@media screen and (min-width: 768px) {
+  .footer-text h2,
+  .footer-text p {
+    position: relative;
+    left: 8.5625rem;
+  }
+  .footer-text img {
+    position: relative;
+    left: 98rem;
+    bottom: 0.7rem;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;

@@ -175,13 +175,16 @@
     }
 
     .section__advantages__first__frame,
-    .section__advantages__second__frame,
-    .section__advantages__third__frame {
+    .section__advantages__second__frame {
         width: 60%;
     }
 
+    .section__advantages__third__frame {}
+
     .section__advantages__third__frame {
         height: 23.125rem;
+        width: 33%;
+        right: 15.9rem;
     }
 
     .section__advantages__first__frame img {
@@ -277,7 +280,7 @@
         width: 27.5rem;
         height: 23.125rem;
         z-index: 0;
-        left: 90%;
+        left: 93%;
         bottom: 381%;
     }
 
