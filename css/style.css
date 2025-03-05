@@ -703,6 +703,129 @@
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .section__cards__pricing__div {
+    display: flex;
+    justify-content: center;
+  }
+  .section__cards__pricing h2 {
+    margin-left: 40%;
+  }
+  .section__cards__pricing__first-card,
+  .section__cards__pricing__second-card,
+  .section__cards__pricing__third-card {
+    width: 23.25rem;
+    height: 28.8125rem;
+    margin-right: 3%;
+  }
+  .section__cards__pricing__first-card:hover {
+    width: 25rem;
+    height: 30.3125rem;
+    transition-duration: 0.3s;
+    box-shadow: 5px 10px 27px 0px #FB3B64;
+  }
+  .section__cards__pricing__first-card:hover .section__cards__pricing__first-card__bt {
+    transition-duration: 0.3s;
+    top: 34.5%;
+  }
+  .section__cards__pricing__second-card:hover {
+    width: 25rem;
+    height: 30.3125rem;
+    transition-duration: 0.3s;
+    box-shadow: 5px 10px 27px 0px #08A6E4;
+  }
+  .section__cards__pricing__second-card:hover .section__cards__pricing__second-card__bt {
+    transition-duration: 0.3s;
+    top: 25%;
+  }
+  .section__cards__pricing__third-card:hover {
+    width: 25rem;
+    height: 30.3125rem;
+    transition-duration: 0.3s;
+    box-shadow: 5px 10px 27px 0px #55DFB4;
+  }
+  .section__cards__pricing__third-card:hover .section__cards__pricing__third-card__bt {
+    transition-duration: 0.3s;
+    top: 25%;
+  }
+  .section__cards__pricing__first-card ul {
+    width: 50%;
+    height: 40%;
+    top: 25%;
+  }
+  .section__cards__pricing__first-card h3 {
+    width: 30%;
+    height: 10%;
+    top: 10%;
+    left: 40%;
+  }
+  .section__cards__pricing__first-card-pPrice {
+    width: 30%;
+    height: 10%;
+    top: 10%;
+    left: 38%;
+  }
+  .section__cards__pricing__first-card__bt {
+    left: 27%;
+    top: 35%;
+  }
+  .section__cards__pricing__second-card h3 {
+    width: 30%;
+    height: 10%;
+    top: 8%;
+    left: 35%;
+  }
+  .section__cards__pricing__second-card__pPrice {
+    width: 30%;
+    height: 10%;
+    top: 8%;
+    left: 39%;
+  }
+  .section__cards__pricing__second-card__pLo {
+    width: 30%;
+    height: 10%;
+    top: 12%;
+    left: 40%;
+  }
+  .section__cards__pricing__second-card ul {
+    width: 50%;
+    height: 40%;
+    top: 14%;
+    left: 35%;
+  }
+  .section__cards__pricing__second-card__bt {
+    left: 28%;
+    top: 25%;
+  }
+  .section__cards__pricing__third-card h3 {
+    width: 30%;
+    height: 10%;
+    top: 8%;
+    left: 37%;
+  }
+  .section__cards__pricing__third-card__pPrice {
+    width: 30%;
+    height: 10%;
+    top: 8%;
+    left: 39%;
+  }
+  .section__cards__pricing__third-card__pLo {
+    width: 30%;
+    height: 10%;
+    top: 12%;
+    left: 40%;
+  }
+  .section__cards__pricing__third-card ul {
+    width: 50%;
+    height: 40%;
+    top: 14%;
+    left: 35%;
+  }
+  .section__cards__pricing__third-card__bt {
+    left: 28%;
+    top: 25%;
+  }
+}
 .section__marketing {
   width: 100%;
   height: 100%;
