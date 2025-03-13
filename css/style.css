@@ -30,6 +30,35 @@
 
 .header__nav__list {
   display: none;
+  width: 100%;
+  height: 10.9781rem;
+  position: absolute;
+  background-color: #FFFFFF;
+  z-index: 4;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
+  list-style: none;
+}
+
+.header__nav__list li {
+  margin-top: 1.25rem;
+  margin-left: 2rem;
+}
+
+.header__nav__list a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 0.9375rem;
+  color: #A5A5A5;
+  text-decoration: none;
+}
+
+.header__nav__list a:hover {
+  color: #000000;
+}
+
+.header__nav__list__list__item {
+  margin-top: 1.25rem;
 }
 
 /* Desktop */
@@ -52,6 +81,11 @@
   }
   .header__nav__list {
     display: flex;
+    box-shadow: none;
+    background-color: transparent;
+    height: auto;
+    position: static;
+    width: max-content;
   }
   .header__nav__list li {
     list-style: none;
@@ -67,6 +101,7 @@
     color: #000000;
     text-decoration: none;
     display: inline-block;
+    margin-bottom: 20px;
     /* Asegura que el span ocupe el ancho del texto */
   }
   .header__nav__list li a:hover {
@@ -81,7 +116,7 @@
     background-color: #08A6E4;
     /* Color de la barra */
     position: absolute;
-    bottom: -1.6rem;
+    bottom: -0.4rem;
     /* Posición debajo del texto */
     left: -0.625rem;
     transition: width 0.3s ease;
@@ -1407,11 +1442,14 @@ footer {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  /* Habilita el scroll suave */
 }
 
 body {
   min-width: 320px;
   overflow-x: hidden;
+  transition: all 1s;
 }
 
 /*# sourceMappingURL=style.css.map */

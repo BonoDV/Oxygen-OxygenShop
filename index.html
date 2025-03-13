@@ -7,24 +7,34 @@
     <title>Oxygen Shop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css\style.css">
+
 </head>
 
 
 <body>
+    <script src="js\hamburgerMenu.js"></script>
     <header class="header">
         <h1 class="header__logo">OXYGENShop</h1>
-        <button class="header__button__hamburger"><img src="resources\svg\Menu.svg" alt="Hamburger Menu"></button>
+        <button class="header__button__hamburger" onclick=hamburgerMenuDisplay()><img src="resources\svg\Menu.svg"
+                alt="Hamburger Menu"></button>
         <nav class="header__nav">
-            <ul class="header__nav__list">
-                <li class="header__nav__list__list__item"><a href="#">WHY US<span class="underline"></span></a></li>
-                <li class="header__nav__list__list__item"><a href="#">BENEFITS<span class="underline"></span></a></li>
-                <li class="header__nav__list__list__item"><a href="#">PRICES<span class="underline"></span></a></li>
-                <li class="header__nav__list__list__item"><a href="#">CONTACT<span class="underline"></span></a></li>
+            <ul class="header__nav__list" onresize="hamburgerMenuDisplayClose()">
+                <li class="header__nav__list__list__item"><a href="#section_marketing">W H Y &nbsp; U S<span
+                            class="underline"></span></a></li>
+                <li class="header__nav__list__list__item"><a href="#section_advantages">B E N E F I T S<span
+                            class="underline"></span></a>
+                </li>
+                <li class="header__nav__list__list__item"><a href="#section_pricing">P R I C E S<span
+                            class="underline"></span></a>
+                </li>
+                <li class="header__nav__list__list__item"><a href="#section_contact">C O N T A C T<span
+                            class="underline"></span></a>
+                </li>
             </ul>
         </nav>
 
     </header>
-    <section class="section__marketing">
+    <section class="section__marketing" id="section_marketing">
         <h1 class="section__marketing__h1">Sell More!</h1>
         <p class="section__marketing__p">Open shop on our platform and increase your sales.</p>
         <button class="section__marketing__btn">Open your shop</button>
@@ -64,7 +74,7 @@
         </div>
     </section>
 
-    <section class="section__advantages">
+    <section class="section__advantages" id="section_advantages">
         <div class="section__advantages__first__frame">
             <img alt="Macbook image" src="resources\img\Macbook.png">
             <div class="section__advantages__first__frame__ellipse"></div>
@@ -96,7 +106,7 @@
         </div>
 
     </section>
-    <section class="section__cards__pricing">
+    <section class="section__cards__pricing" id="section_pricing">
         <h2>Pricing</h2>
         <div class="section__cards__pricing__div">
             <div class="section__cards__pricing__first-card">
@@ -169,7 +179,7 @@
             </div>
         </div>
     </section>
-    <section class="section__contact">
+    <section class="section__contact" id="section_contact">
         <div class="section__contact__div">
             <h2>Any questions?</h2>
             <p class="section__contact__div__p">Leave your email address or call us!</p>

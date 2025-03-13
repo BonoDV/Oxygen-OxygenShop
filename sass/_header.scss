@@ -28,6 +28,36 @@
 
 .header__nav__list {
     display: none;
+    width: 100%;
+    height: 10.9781rem;
+    position: absolute;
+    background-color: $white_advantages_frames;
+    z-index: 4;
+    box-shadow: 0px 4px 4px 0px #0000004A;
+    list-style: none;
+}
+
+.header__nav__list li {
+    margin-top: 1.25rem;
+    margin-left: 2rem;
+}
+
+.header__nav__list a {
+    font-family: $openSansFont;
+    font-size: .6875rem;
+    font-weight: 700;
+    line-height: .9375rem;
+    color: $grey_marketing;
+    text-decoration: none;
+
+}
+
+.header__nav__list a:hover {
+    color: $black;
+}
+
+.header__nav__list__list__item {
+    margin-top: 1.25rem;
 }
 
 /* Desktop */
@@ -53,6 +83,11 @@
 
     .header__nav__list {
         display: flex;
+        box-shadow: none;
+        background-color: transparent;
+        height: auto;
+        position: static;
+        width: max-content;
     }
 
     .header__nav__list li {
@@ -70,6 +105,7 @@
         color: $black;
         text-decoration: none;
         display: inline-block;
+        margin-bottom: 20px;
         /* Asegura que el span ocupe el ancho del texto */
     }
 
@@ -86,7 +122,7 @@
         background-color: $blue;
         /* Color de la barra */
         position: absolute;
-        bottom: -1.6rem;
+        bottom: -0.4rem;
         /* Posición debajo del texto */
         left: -0.625rem;
         transition: width 0.3s ease;
