@@ -19,6 +19,7 @@
     <script src="js\hamburgerMenu.js"></script>
     <script src="js\progressBar.js"></script>
     <script src="js\returnTop.js"></script>
+    <script src="js\validForm.js"></script>
     <header class="header">
         <h1 class="header__logo">OXYGENShop</h1>
         <button class="header__button__hamburger" onclick=hamburgerMenuDisplay()><img src="resources\svg\Menu.svg"
@@ -202,16 +203,23 @@
             </a>
         </div>
         <div class="section__contact__div__form">
-            <form action="contact.html" method="post">
+            <form action="contact.html" method="post" name="contactForm" onchange="validForm()">
                 <label for="name">N A M E:</label>
                 <br>
-                <input type="text" name="name">
+                <input type="text" name="name" id="name">
+                <br>
+                <p class="section__contact__div__form__errorTextName" id="section__contact__div__form__errorTextName">
+                    1-200
+                    characters</p>
                 <br>
                 <label for="email">E M A I L:</label>
                 <br>
-                <input type="email" name="email">
+                <input type="email" name="email" id="email">
                 <br>
-                <input type="checkbox">
+                <p class="section__contact__div__form__errorTextEmail" id="section__contact__div__form__errorTextEmail">
+                    Please put a valid email.</p>
+                <br>
+                <input type="checkbox" id="section__contact__div__form__checkBox" name="checkBox">
                 <p class="section__contact__div__consent">I hereby give consent for my personal data included in my
                     application to be
                     processed for the purposes of the recruitment process under the European Parliament’s and Council of
@@ -221,7 +229,8 @@
                     processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC
                     (Data Protection Directive)</p>
                 </input><br>
-                <button class="section__contact__div__form__button">Send</button>
+                <button class="section__contact__div__form__button" id="section__contact__div__form__button"
+                    disabled>Send</button>
             </form>
         </div>
         </div>

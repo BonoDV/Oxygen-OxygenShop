@@ -1320,6 +1320,42 @@
   border-radius: 2.5rem;
   position: relative;
   margin-bottom: 2.75rem;
+  cursor: pointer;
+}
+
+.section__contact__div__form__button:disabled {
+  width: 14.125rem;
+  height: 3.5625rem;
+  top: auto;
+  left: 3rem;
+  bottom: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.1062rem;
+  color: #FFFFFF;
+  background-color: #A5A5A5;
+  border: none;
+  border-radius: 2.5rem;
+  position: relative;
+  margin-bottom: 2.75rem;
+}
+
+/* Error text styles */
+.section__contact__div__form__errorTextName {
+  display: none;
+  color: red;
+  position: relative;
+  top: 10%;
+  left: 2%;
+}
+
+.section__contact__div__form__errorTextEmail {
+  display: none;
+  color: red;
+  position: relative;
+  left: 3%;
+  top: 10%;
 }
 
 /* Desktop version */
@@ -1381,7 +1417,7 @@
   .section__contact__div__form__button {
     width: 14.125rem;
     height: 3.5625rem;
-    left: 13rem;
+    left: 3rem;
   }
 }
 footer {

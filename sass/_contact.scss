@@ -111,6 +111,30 @@
 .section__contact__div__form__button {
     @include sectionCards.buttonStyle(14.125rem, 3.5625rem, auto, 3rem, auto, $openSansFont, .8125rem, 700, 1.1062rem, $white_advantages_frames, $blue, none, 2.5rem);
     margin-bottom: 2.75rem;
+    cursor: pointer;
+}
+
+.section__contact__div__form__button:disabled {
+    @include sectionCards.buttonStyle(14.125rem, 3.5625rem, auto, 3rem, auto, $openSansFont, .8125rem, 700, 1.1062rem, $white_advantages_frames, $grey_marketing, none, 2.5rem);
+    margin-bottom: 2.75rem;
+
+}
+
+/* Error text styles */
+.section__contact__div__form__errorTextName {
+    display: none;
+    color: red;
+    position: relative;
+    top: 10%;
+    left: 2%;
+}
+
+.section__contact__div__form__errorTextEmail {
+    display: none;
+    color: red;
+    position: relative;
+    left: 3%;
+    top: 10%;
 }
 
 
@@ -185,6 +209,6 @@
     .section__contact__div__form__button {
         width: 14.125rem;
         height: 3.5625rem;
-        left: 13rem;
+        left: 3rem;
     }
 }
