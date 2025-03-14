@@ -20,6 +20,7 @@
     <script src="js\progressBar.js"></script>
     <script src="js\returnTop.js"></script>
     <script src="js\validForm.js"></script>
+    <script src="js\sendData.js"></script>
     <header class="header">
         <h1 class="header__logo">OXYGENShop</h1>
         <button class="header__button__hamburger" onclick=hamburgerMenuDisplay()><img src="resources\svg\Menu.svg"
@@ -203,7 +204,7 @@
             </a>
         </div>
         <div class="section__contact__div__form">
-            <form action="contact.html" method="post" name="contactForm" onchange="validForm()">
+            <form action="" method="post" name="contactForm" onchange="validForm()" onsubmit="sendDataToAPI()">
                 <label for="name">N A M E:</label>
                 <br>
                 <input type="text" name="name" id="name">
@@ -229,8 +230,8 @@
                     processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC
                     (Data Protection Directive)</p>
                 </input><br>
-                <button class="section__contact__div__form__button" id="section__contact__div__form__button"
-                    disabled>Send</button>
+                <button onclick="sendDataToAPI()" type="button" class="section__contact__div__form__button"
+                    id="section__contact__div__form__button" disabled>Send</button>
             </form>
         </div>
         </div>
