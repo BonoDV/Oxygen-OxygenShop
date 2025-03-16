@@ -21,6 +21,7 @@
     <script src="js\returnTop.js"></script>
     <script src="js\validForm.js"></script>
     <script src="js\sendData.js"></script>
+    <script src="js\currencySelector.js"></script>
     <header class="header">
         <h1 class="header__logo">OXYGENShop</h1>
         <button class="header__button__hamburger" onclick=hamburgerMenuDisplay()><img src="resources\svg\Menu.svg"
@@ -121,10 +122,17 @@
     </section>
     <section class="section__cards__pricing" id="section_pricing">
         <h2>Pricing</h2>
+        <select name="section__cards__pricing__select" class="section__cards__pricing__select"
+            id="section__cards__pricing__select" onchange="currencySelected()">
+            <option value="usd" selected>USD ($)</option>
+            <option value="euro">EUR (€)</option>
+            <option value="gbp">GBP (£)</option>
+        </select>
         <div class="section__cards__pricing__div">
             <div class="section__cards__pricing__first-card">
                 <h3>Basic</h3>
-                <p class="section__cards__pricing__first-card-pPrice">$0</p>
+                <p class="section__cards__pricing__first-card-pPrice" id="section__cards__pricing__first-card-pPrice">$0
+                </p>
                 <ul class="list">
                     <li><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
                         <p>100 MB HDD</p>
@@ -146,7 +154,8 @@
             </div>
             <div class="section__cards__pricing__second-card">
                 <h3>Professional</h3>
-                <p class="section__cards__pricing__second-card__pPrice">$25</p>
+                <p class="section__cards__pricing__second-card__pPrice"
+                    id="section__cards__pricing__second-card__pPrice">$25</p>
                 <p class="section__cards__pricing__second-card__pLo">Limited offer</p>
                 <ul class="list">
                     <li><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
@@ -169,7 +178,8 @@
             </div>
             <div class="section__cards__pricing__third-card">
                 <h3>Premium</h3>
-                <p class="section__cards__pricing__third-card__pPrice">$60</p>
+                <p class="section__cards__pricing__third-card__pPrice" id="section__cards__pricing__third-card__pPrice">
+                    $60</p>
                 <p class="section__cards__pricing__third-card__pLo">Limited offer</p>
                 <ul class="list">
                     <li><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
