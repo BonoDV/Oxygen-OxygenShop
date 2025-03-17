@@ -1,9 +1,8 @@
 .slider {
     margin-bottom: 5%;
-    margin-left: 35%;
     position: relative;
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -17,8 +16,8 @@
     width: 100%;
     height: auto;
     flex-shrink: 0;
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 200px;
 }
 
 .slider__butons__prev,
@@ -60,4 +59,71 @@
 
 .slider__dots span.active {
     background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+
+    .slider {
+        margin-bottom: 5%;
+        margin-left: 35%;
+        position: relative;
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .slider__images__container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+    }
+
+    .slider__images__container img {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        width: 600px;
+        height: 400px;
+    }
+
+    .slider__butons__prev,
+    .slider__butons__next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .slider__butons__prev {
+        left: 10px;
+    }
+
+    .slider__butons__next {
+        right: 10px;
+    }
+
+    .slider__dots {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+
+    .slider__dots span {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .slider__dots span.active {
+        background-color: white;
+    }
 }
