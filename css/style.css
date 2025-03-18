@@ -1208,7 +1208,7 @@
 .section__contact__div img {
   width: 1.6875rem;
   height: 1.6875rem;
-  top: auto;
+  top: 0.5rem;
   left: 2rem;
   z-index: auto;
   position: relative;

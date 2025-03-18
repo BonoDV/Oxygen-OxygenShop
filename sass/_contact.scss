@@ -18,7 +18,7 @@
 
 /* Image Style */
 .section__contact__div img {
-    @include sectionFrames.imageStyle(1.6875rem, 1.6875rem, auto, 2rem, auto);
+    @include sectionFrames.imageStyle(1.6875rem, 1.6875rem, .5rem, 2rem, auto);
 }
 
 /* Href Style */
