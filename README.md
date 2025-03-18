@@ -1,4 +1,4 @@
-# SASS and HTML5 Learning Project
+# HTML5, SASS and JS Learning Project
 
 This project aims to practice and learn the use of **SASS** for styling, while using **HTML5** for the structure of the webpage, **JS** for coding and **BEM** methodology.
 
