@@ -3,6 +3,7 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 .header {
   height: 4.375rem;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2901960784);
@@ -72,14 +73,17 @@
     align-items: center;
     justify-content: center;
   }
+
   .header__logo {
     font-size: 2rem;
     margin-left: 3.125rem;
     margin-bottom: 1.25rem;
   }
+
   .header__button__hamburger {
     display: none;
   }
+
   .header__nav__list {
     display: flex;
     box-shadow: none;
@@ -88,12 +92,14 @@
     position: static;
     width: max-content;
   }
+
   .header__nav__list li {
     list-style: none;
     margin-right: 5rem;
     position: relative;
     /* Necesario para posicionar la barra */
   }
+
   .header__nav__list li a {
     font-family: "Open Sans", sans-serif;
     font-size: 0.6875rem;
@@ -105,9 +111,11 @@
     margin-bottom: 20px;
     /* Asegura que el span ocupe el ancho del texto */
   }
+
   .header__nav__list li a:hover {
     color: #08A6E4;
   }
+
   .header__nav__list__list__item .underline {
     display: block;
     width: 0;
@@ -123,11 +131,13 @@
     transition: width 0.3s ease;
     /* Animación suave */
   }
+
   .header__nav__list__list__item:hover .underline {
     width: 150%;
     /* La barra se expande al 100% del ancho del texto */
   }
 }
+
 /* Section style */
 .section__advantages {
   width: 100%;
@@ -342,15 +352,18 @@
     flex-direction: column;
     align-items: center;
   }
+
   .section__advantages__first__frame,
   .section__advantages__second__frame {
     width: 60%;
   }
+
   .section__advantages__third__frame {
     height: 23.125rem;
     width: 33%;
     right: 15.4rem;
   }
+
   .section__advantages__first__frame img {
     width: 24.1525rem;
     height: 13.6875rem;
@@ -358,6 +371,7 @@
     left: 50%;
     top: 30%;
   }
+
   .section__advantages__first__frame__ellipse {
     width: 11.25rem;
     height: 11.25rem;
@@ -365,18 +379,21 @@
     left: 70%;
     bottom: 45%;
   }
+
   .section__advantages__first__frame h2 {
     width: 14.8125rem;
     height: 2.625rem;
     font-size: 2.25rem;
     bottom: 80%;
   }
+
   .section__advantages__first__frame p {
     width: 26rem;
     height: 4.125rem;
     font-size: 1rem;
     bottom: 75%;
   }
+
   .section__advantages__first__frame p::after {
     content: "";
     display: block;
@@ -385,6 +402,7 @@
     margin-top: 12%;
     width: 20.4775rem;
   }
+
   .section__advantages__second__frame img {
     width: 26.625rem;
     height: 20.5rem;
@@ -392,6 +410,7 @@
     left: 1%;
     top: 10%;
   }
+
   .section__advantages__second__frame__ellipse {
     width: 20rem;
     height: 20rem;
@@ -399,6 +418,7 @@
     left: 2%;
     bottom: 85%;
   }
+
   .section__advantages__second__frame h2 {
     width: 16.1875rem;
     height: 5.25rem;
@@ -406,6 +426,7 @@
     left: 60%;
     bottom: 150%;
   }
+
   .section__advantages__second__frame p {
     width: 26rem;
     height: 4.125rem;
@@ -413,6 +434,7 @@
     left: 60%;
     bottom: 147%;
   }
+
   .section__advantages__second__frame p::after {
     content: "";
     display: block;
@@ -421,12 +443,14 @@
     margin-top: 12%;
     width: 20.4775rem;
   }
+
   .section__advantages__third__frame__extension img {
     width: 26.625rem;
     height: 20.5rem;
     left: 90%;
     bottom: 180%;
   }
+
   .section__advantages__third__frame__extension__rectangle {
     width: 27.5rem;
     height: 23.125rem;
@@ -434,6 +458,7 @@
     left: 87%;
     bottom: 381%;
   }
+
   .section__advantages__third__frame h2 {
     width: 21.75rem;
     height: 5.25rem;
@@ -441,6 +466,7 @@
     left: 5%;
     top: 20%;
   }
+
   .section__advantages__third__frame p {
     width: 26rem;
     height: 4.125rem;
@@ -448,6 +474,7 @@
     left: 5%;
     top: 25%;
   }
+
   .section__advantages__third__frame p::after {
     content: "";
     display: block;
@@ -457,6 +484,7 @@
     width: 20.4775rem;
   }
 }
+
 /* Text styles */
 .section__cards__pricing h2 {
   width: 7.125rem;
@@ -710,6 +738,7 @@
   border: 2.5rem;
   border-radius: 1.4375rem;
   position: relative;
+  cursor: pointer;
 }
 
 .section__cards__pricing__second-card__bt {
@@ -727,6 +756,7 @@
   border: 2.5rem;
   border-radius: 1.4375rem;
   position: relative;
+  cursor: pointer;
 }
 
 .section__cards__pricing__third-card__bt {
@@ -744,6 +774,7 @@
   border: 2.5rem;
   border-radius: 1.4375rem;
   position: relative;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -752,14 +783,17 @@
     justify-content: center;
     margin-bottom: 2.75rem;
   }
+
   .section__cards__pricing h2 {
     margin-left: 40%;
   }
+
   .section__cards__pricing__select {
     position: relative;
     margin-top: 3%;
     left: 47%;
   }
+
   .section__cards__pricing__first-card,
   .section__cards__pricing__second-card,
   .section__cards__pricing__third-card {
@@ -767,114 +801,135 @@
     height: 28.8125rem;
     margin-right: 3%;
   }
+
   .section__cards__pricing__first-card:hover {
     width: 25rem;
     height: 30.3125rem;
     transition-duration: 0.3s;
     box-shadow: 5px 10px 27px 0px #FB3B64;
   }
+
   .section__cards__pricing__first-card:hover .section__cards__pricing__first-card__bt {
     transition-duration: 0.3s;
     top: 34.5%;
   }
+
   .section__cards__pricing__second-card:hover {
     width: 25rem;
     height: 30.3125rem;
     transition-duration: 0.3s;
     box-shadow: 5px 10px 27px 0px #08A6E4;
   }
+
   .section__cards__pricing__second-card:hover .section__cards__pricing__second-card__bt {
     transition-duration: 0.3s;
     top: 25%;
   }
+
   .section__cards__pricing__third-card:hover {
     width: 25rem;
     height: 30.3125rem;
     transition-duration: 0.3s;
     box-shadow: 5px 10px 27px 0px #55DFB4;
   }
+
   .section__cards__pricing__third-card:hover .section__cards__pricing__third-card__bt {
     transition-duration: 0.3s;
     top: 25%;
   }
+
   .section__cards__pricing__first-card ul {
     width: 50%;
     height: 40%;
     top: 25%;
   }
+
   .section__cards__pricing__first-card h3 {
     width: 30%;
     height: 10%;
     top: 10%;
     left: 40%;
   }
+
   .section__cards__pricing__first-card-pPrice {
     width: 30%;
     height: 10%;
     top: 10%;
     left: 38%;
   }
+
   .section__cards__pricing__first-card__bt {
     left: 27%;
     top: 35%;
   }
+
   .section__cards__pricing__second-card h3 {
     width: 30%;
     height: 10%;
     top: 8%;
     left: 35%;
   }
+
   .section__cards__pricing__second-card__pPrice {
     width: 30%;
     height: 10%;
     top: 8%;
     left: 39%;
   }
+
   .section__cards__pricing__second-card__pLo {
     width: 30%;
     height: 10%;
     top: 12%;
     left: 40%;
   }
+
   .section__cards__pricing__second-card ul {
     width: 50%;
     height: 40%;
     top: 14%;
     left: 35%;
   }
+
   .section__cards__pricing__second-card__bt {
     left: 28%;
     top: 25%;
   }
+
   .section__cards__pricing__third-card h3 {
     width: 30%;
     height: 10%;
     top: 8%;
     left: 37%;
   }
+
   .section__cards__pricing__third-card__pPrice {
     width: 30%;
     height: 10%;
     top: 8%;
     left: 39%;
   }
+
   .section__cards__pricing__third-card__pLo {
     width: 30%;
     height: 10%;
     top: 12%;
     left: 40%;
   }
+
   .section__cards__pricing__third-card ul {
     width: 50%;
     height: 40%;
     top: 14%;
     left: 35%;
   }
+
   .section__cards__pricing__third-card__bt {
     left: 28%;
     top: 25%;
   }
 }
+
 .section__marketing {
   width: 100%;
   height: 100%;
@@ -1129,6 +1184,7 @@
     line-height: 3.5625rem;
     position: relative;
   }
+
   .section__marketing__p {
     width: 30rem;
     height: 1.375rem;
@@ -1141,6 +1197,7 @@
     line-height: 1.375rem;
     position: relative;
   }
+
   .section__marketing__btn {
     width: 27.5rem;
     height: 4.1875rem;
@@ -1156,18 +1213,22 @@
     border: 2.5rem;
     border-radius: 1.4375rem;
     position: relative;
+    cursor: pointer;
   }
+
   .section__marketing__img {
     width: 110%;
     height: 20%;
     position: relative;
   }
+
   .section_marketing__ellipse__container {
     display: flex;
     justify-content: center;
     margin-top: 80px;
   }
 }
+
 .section__contact {
   height: 30rem;
 }
@@ -1284,6 +1345,7 @@
   position: relative;
   appearance: none;
   border: 1px solid #95989A;
+  cursor: pointer;
 }
 
 .section__contact__div__form input[type=checkbox]:checked::after {
@@ -1298,6 +1360,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .section__contact__div__consent {
@@ -1330,6 +1393,7 @@
   border: none;
   border-radius: 2.5rem;
   position: relative;
+  cursor: pointer;
   margin-bottom: 2.75rem;
   cursor: pointer;
 }
@@ -1349,6 +1413,7 @@
   border: none;
   border-radius: 2.5rem;
   position: relative;
+  cursor: pointer;
   margin-bottom: 2.75rem;
 }
 
@@ -1377,37 +1442,45 @@
     display: flex;
     justify-content: flex-start;
   }
+
   .section__contact__div h2 {
     height: 3.5625rem;
     width: 21.4375rem;
   }
+
   .section__contact__div p:not(p[class=section__contact__div__consent]):not(p[class=section__contact__div__p]) {
     top: 18%;
   }
+
   .section__contact__div p:not(p[class=section__contact__div__consent]) {
     width: 21.4375rem;
     top: 7%;
   }
+
   .section__contact__div a[href="tel:123456789"] {
     position: relative;
     left: 60%;
     bottom: 6.5%;
   }
+
   .section__contact__div img {
     top: 20%;
   }
+
   .section__contact__div__form form {
     width: 27.5rem;
     height: 9.8125rem;
     top: auto;
     left: 70%;
   }
+
   .section__contact__div__form label {
     position: relative;
     top: 1.5rem;
     left: 0.8rem;
     margin-bottom: 1.25rem;
   }
+
   .section__contact__div__form input:not([type=checkbox]) {
     width: 27.5rem;
     height: 2rem;
@@ -1417,24 +1490,29 @@
     border: none;
     border-bottom: 1px solid #95989A;
   }
+
   .section__contact__div__form input[type=checkbox] {
     left: 0.9375rem;
   }
+
   .section__contact__div__consent {
     width: 25.3125rem;
     height: 6.75rem;
     left: 3rem;
   }
+
   .section__contact__div__form__button {
     width: 14.125rem;
     height: 3.5625rem;
     left: 3rem;
   }
+
   .section__contact__div__form__sentStatus {
     position: relative;
     left: 1.875rem;
   }
 }
+
 footer {
   width: 100%;
   height: 5.5625rem;
@@ -1480,17 +1558,20 @@ footer {
 
 /* Deskop version */
 @media screen and (min-width: 768px) {
+
   .footer-text h2,
   .footer-text p {
     position: relative;
     left: 8.5625rem;
   }
+
   .footer-text img {
     position: relative;
     left: 98rem;
     bottom: 0.7rem;
   }
 }
+
 .progress-bar {
   position: fixed;
   width: 100%;
@@ -1611,11 +1692,13 @@ footer {
     height: 400px;
     overflow: hidden;
   }
+
   .slider__images__container {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%;
   }
+
   .slider__images__container img {
     width: 100%;
     height: auto;
@@ -1623,6 +1706,7 @@ footer {
     width: 600px;
     height: 400px;
   }
+
   .slider__butons__prev,
   .slider__butons__next {
     position: absolute;
@@ -1634,12 +1718,15 @@ footer {
     padding: 10px;
     cursor: pointer;
   }
+
   .slider__butons__prev {
     left: 10px;
   }
+
   .slider__butons__next {
     right: 10px;
   }
+
   .slider__dots {
     position: absolute;
     bottom: 10px;
@@ -1647,6 +1734,7 @@ footer {
     transform: translateX(-50%);
     display: flex;
   }
+
   .slider__dots span {
     width: 10px;
     height: 10px;
@@ -1655,10 +1743,12 @@ footer {
     margin: 0 5px;
     cursor: pointer;
   }
+
   .slider__dots span.active {
     background-color: white;
   }
 }
+
 .newsletter__modal {
   margin: auto;
   width: 80%;
