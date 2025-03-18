@@ -13,7 +13,7 @@
 
 /* P Style */
 .section__contact__div p:not(p[class="section__contact__div__consent"]) {
-    @include sectionFrames.textStyle(19.5rem, 1.375rem, auto, auto, 2rem, $openSansFont, 1rem, 400, 1.375rem);
+    @include sectionFrames.textStyle(auto, 1.375rem, auto, auto, 2rem, $openSansFont, 1rem, 400, 1.375rem);
 }
 
 /* Image Style */
@@ -157,7 +157,7 @@
     }
 
     .section__contact__div p:not(p[class=section__contact__div__consent]) {
-        width: 21.4375rem;
+
         top: 7%;
     }
 
