@@ -1288,6 +1288,7 @@
   position: relative;
   appearance: none;
   border: 1px solid #95989A;
+  cursor: pointer;
 }
 
 .section__contact__div__form input[type=checkbox]:checked::after {
@@ -1302,6 +1303,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .section__contact__div__consent {
