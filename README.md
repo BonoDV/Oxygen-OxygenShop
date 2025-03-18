@@ -1,11 +1,12 @@
 # SASS and HTML5 Learning Project
 
-This project aims to practice and learn the use of **SASS** for styling, while using **HTML5** for the structure of the webpage and **BEM** methodology.
+This project aims to practice and learn the use of **SASS** for styling, while using **HTML5** for the structure of the webpage, **JS** for coding and **BEM** methodology.
 
 ## Technologies Used
 
 - **HTML5**: Markup language for the structure of the webpage.
 - **SASS**: CSS preprocessor to improve organization and reusability of styles.
+- **JS**: to codding the functions.
 - **Git**: Version control to manage the source code of the project.
 
 ## Installation and Usage
