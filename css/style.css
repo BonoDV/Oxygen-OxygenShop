@@ -15,7 +15,8 @@
   color: #08A6E4;
   margin-left: 1.5625rem;
   width: 60%;
-  margin-top: 1.25rem;
+  top: 0.9375rem;
+  position: relative;
 }
 
 .header__button__hamburger {
@@ -25,11 +26,40 @@
   height: 0.875rem;
   margin-left: 20rem;
   position: relative;
-  bottom: 1.6rem;
+  bottom: 0.6rem;
 }
 
 .header__nav__list {
   display: none;
+  width: 100%;
+  height: 10.9781rem;
+  position: absolute;
+  background-color: #FFFFFF;
+  z-index: 4;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
+  list-style: none;
+}
+
+.header__nav__list li {
+  margin-top: 1.25rem;
+  margin-left: 2rem;
+}
+
+.header__nav__list a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 0.9375rem;
+  color: #A5A5A5;
+  text-decoration: none;
+}
+
+.header__nav__list a:hover {
+  color: #000000;
+}
+
+.header__nav__list__list__item {
+  margin-top: 1.25rem;
 }
 
 /* Desktop */
@@ -52,6 +82,11 @@
   }
   .header__nav__list {
     display: flex;
+    box-shadow: none;
+    background-color: transparent;
+    height: auto;
+    position: static;
+    width: max-content;
   }
   .header__nav__list li {
     list-style: none;
@@ -67,6 +102,7 @@
     color: #000000;
     text-decoration: none;
     display: inline-block;
+    margin-bottom: 20px;
     /* Asegura que el span ocupe el ancho del texto */
   }
   .header__nav__list li a:hover {
@@ -81,7 +117,7 @@
     background-color: #08A6E4;
     /* Color de la barra */
     position: absolute;
-    bottom: -1.6rem;
+    bottom: -0.4rem;
     /* Posición debajo del texto */
     left: -0.625rem;
     transition: width 0.3s ease;
@@ -435,6 +471,12 @@
   position: relative;
 }
 
+.section__cards__pricing__select {
+  position: relative;
+  margin-top: 6%;
+  left: 39%;
+}
+
 /* Pricing card style */
 .section__cards__pricing__first-card {
   width: 18.3125rem;
@@ -712,6 +754,11 @@
   }
   .section__cards__pricing h2 {
     margin-left: 40%;
+  }
+  .section__cards__pricing__select {
+    position: relative;
+    margin-top: 3%;
+    left: 47%;
   }
   .section__cards__pricing__first-card,
   .section__cards__pricing__second-card,
@@ -1284,6 +1331,42 @@
   border-radius: 2.5rem;
   position: relative;
   margin-bottom: 2.75rem;
+  cursor: pointer;
+}
+
+.section__contact__div__form__button:disabled {
+  width: 14.125rem;
+  height: 3.5625rem;
+  top: auto;
+  left: 3rem;
+  bottom: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.1062rem;
+  color: #FFFFFF;
+  background-color: #A5A5A5;
+  border: none;
+  border-radius: 2.5rem;
+  position: relative;
+  margin-bottom: 2.75rem;
+}
+
+/* Error text styles */
+.section__contact__div__form__errorTextName {
+  display: none;
+  color: red;
+  position: relative;
+  top: 10%;
+  left: 2%;
+}
+
+.section__contact__div__form__errorTextEmail {
+  display: none;
+  color: red;
+  position: relative;
+  left: 3%;
+  top: 10%;
 }
 
 /* Desktop version */
@@ -1345,7 +1428,11 @@
   .section__contact__div__form__button {
     width: 14.125rem;
     height: 3.5625rem;
-    left: 13rem;
+    left: 3rem;
+  }
+  .section__contact__div__form__sentStatus {
+    position: relative;
+    left: 1.875rem;
   }
 }
 footer {
@@ -1353,6 +1440,7 @@ footer {
   height: 5.5625rem;
   position: absolute;
   box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 15%;
 }
 
 .footer-text h2 {
@@ -1403,15 +1491,270 @@ footer {
     bottom: 0.7rem;
   }
 }
+.progress-bar {
+  position: fixed;
+  width: 100%;
+  height: 0.3rem;
+  z-index: 5;
+}
+
+.progress-bar__line {
+  width: 0%;
+  height: 100%;
+  background-color: #08A6E4;
+}
+
+.return__top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #ffffff;
+  border: 3px solid #08A6E4;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.return__top:hover {
+  background-color: #08A6E4;
+  color: #ffffff;
+}
+
+.return__top img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.return__top button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.slider {
+  margin-bottom: 5%;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.slider__images__container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slider__images__container img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  width: 400px;
+  height: 200px;
+}
+
+.slider__butons__prev,
+.slider__butons__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slider__butons__prev {
+  left: 10px;
+}
+
+.slider__butons__next {
+  right: 10px;
+}
+
+.slider__dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.slider__dots span {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider__dots span.active {
+  background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    margin-bottom: 5%;
+    margin-left: 35%;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+  }
+  .slider__images__container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  .slider__images__container img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    width: 600px;
+    height: 400px;
+  }
+  .slider__butons__prev,
+  .slider__butons__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .slider__butons__prev {
+    left: 10px;
+  }
+  .slider__butons__next {
+    right: 10px;
+  }
+  .slider__dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .slider__dots span {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .slider__dots span.active {
+    background-color: white;
+  }
+}
+.newsletter__modal {
+  margin: auto;
+  width: 80%;
+  max-width: 500px;
+  /* Limita el ancho máximo */
+  height: 50%;
+  /* Altura automática según el contenido */
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  /* Necesario para posicionar el botón de cerrar */
+}
+
+.newsletter__modal[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter__modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.newsletter__modal__closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.newsletter__modal__closeButton:hover {
+  color: #ff0000;
+  /* Cambia el color al pasar el mouse */
+}
+
+.newsletter__modal h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.newsletter__modal__form__label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.newsletter__modal__form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter__modal__form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter__modal__form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  /* Habilita el scroll suave */
 }
 
 body {
   min-width: 320px;
   overflow-x: hidden;
+  transition: all 1s;
 }
 
 /*# sourceMappingURL=style.css.map */

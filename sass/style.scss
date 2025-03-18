@@ -4,14 +4,23 @@
 @use "_section_cards";
 @use "_contact";
 @use "_footer";
+@use "_progressBar";
+@use "_topArrow";
+@use "_slider";
+@use "_modal";
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    /* Habilita el scroll suave */
+
 }
 
 body {
     min-width: 320px;
     overflow-x: hidden;
+    transition: all 1s;
+
 }

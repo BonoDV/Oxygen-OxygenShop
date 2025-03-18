@@ -18,6 +18,12 @@
     @include textStyle(7.125rem, 2.625rem, auto, 1rem, 8rem, $ralewayFont, 2.25rem, 400, 2.6412rem);
 }
 
+.section__cards__pricing__select {
+    position: relative;
+    margin-top: 6%;
+    left: 39%;
+}
+
 /* Pricing card style */
 @mixin pricingCardStyle($width, $height, $top, $left, $marginBottom, $radius, $border) {
     width: $width;
@@ -193,6 +199,12 @@
 
     .section__cards__pricing h2 {
         margin-left: 40%;
+    }
+
+    .section__cards__pricing__select {
+        position: relative;
+        margin-top: 3%;
+        left: 47%;
     }
 
     .section__cards__pricing__first-card,

@@ -1,0 +1,36 @@
+@use "_variables" as *;
+
+.return__top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #ffffff;
+    border: 3px solid $blue;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.return__top:hover {
+    background-color: $blue;
+    color: #ffffff;
+}
+
+.return__top img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.return__top button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}

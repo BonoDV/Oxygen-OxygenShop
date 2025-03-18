@@ -7,24 +7,62 @@
     <title>Oxygen Shop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css\style.css">
+
 </head>
 
 
 <body>
+
+    <div class="progress-bar">
+        <div class="progress-bar__line" id="progress-bar__line"></div>
+    </div>
+    <script src="js\hamburgerMenu.js"></script>
+    <script src="js\progressBar.js"></script>
+    <script src="js\returnTop.js"></script>
+    <script src="js\validForm.js"></script>
+    <script src="js\sendData.js"></script>
+    <script src="js\currencySelector.js"></script>
+
+
+    <dialog class="newsletter__modal" id="newsletter__modal" close>
+        <button type="button" class="newsletter__modal__closeButton" onclick="closeModal()">X</button>
+        <h2>Suscribe to our newsletter</h2>
+        <form action="" method="post" name="newsletterForm">
+            <label for="name" class="newsletter__modal__form__label">E M A I L:</label>
+            <br>
+            <input type="text" id="newsletter__modal__email" onchange="emailVerification()">
+            <button id="newsletter__modal_sendButton" type="button" onclick="sendData()" disabled>Send</button>
+            <p id="newsletter__modal__text"></p>
+        </form>
+    </dialog>
+
     <header class="header">
         <h1 class="header__logo">OXYGENShop</h1>
-        <button class="header__button__hamburger"><img src="resources\svg\Menu.svg" alt="Hamburger Menu"></button>
+        <button class="header__button__hamburger" onclick=hamburgerMenuDisplay()><img src="resources\svg\Menu.svg"
+                alt="Hamburger Menu"></button>
         <nav class="header__nav">
-            <ul class="header__nav__list">
-                <li class="header__nav__list__list__item"><a href="#">WHY US<span class="underline"></span></a></li>
-                <li class="header__nav__list__list__item"><a href="#">BENEFITS<span class="underline"></span></a></li>
-                <li class="header__nav__list__list__item"><a href="#">PRICES<span class="underline"></span></a></li>
-                <li class="header__nav__list__list__item"><a href="#">CONTACT<span class="underline"></span></a></li>
+            <ul class="header__nav__list" onresize="hamburgerMenuDisplayClose()">
+                <li class="header__nav__list__list__item"><a href="#section_marketing">W H Y &nbsp; U S<span
+                            class="underline"></span></a></li>
+                <li class="header__nav__list__list__item"><a href="#section_advantages">B E N E F I T S<span
+                            class="underline"></span></a>
+                </li>
+                <li class="header__nav__list__list__item"><a href="#section_pricing">P R I C E S<span
+                            class="underline"></span></a>
+                </li>
+                <li class="header__nav__list__list__item"><a href="#section_contact">C O N T A C T<span
+                            class="underline"></span></a>
+                </li>
             </ul>
         </nav>
 
     </header>
-    <section class="section__marketing">
+    <div class="return__top">
+        <button class="return__top__button" onclick="returnTop()">
+            <img src="resources\svg\topArrow.svg" alt="Arrow Up">
+        </button>
+    </div>
+    <section class="section__marketing" id="section_marketing">
         <h1 class="section__marketing__h1">Sell More!</h1>
         <p class="section__marketing__p">Open shop on our platform and increase your sales.</p>
         <button class="section__marketing__btn">Open your shop</button>
@@ -64,12 +102,13 @@
         </div>
     </section>
 
-    <section class="section__advantages">
+    <section class="section__advantages" id="section_advantages">
         <div class="section__advantages__first__frame">
             <img alt="Macbook image" src="resources\img\Macbook.png">
             <div class="section__advantages__first__frame__ellipse"></div>
             <h2>Be always first</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et
                 dolore magna aliqua. Ut enim ad minim veniam.
             </p>
 
@@ -80,14 +119,16 @@
             <img src="resources\img\Iphone.png" alt="Iphone">
             <div class="section__advantages__second__frame__ellipse"></div>
             <h2>Your shop is where you are!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et
                 dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
 
 
         <div class="section__advantages__third__frame">
             <h2>Increase recognition your brand!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et
                 dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
         <div class="section__advantages__third__frame__extension">
@@ -96,12 +137,19 @@
         </div>
 
     </section>
-    <section class="section__cards__pricing">
+    <section class="section__cards__pricing" id="section_pricing">
         <h2>Pricing</h2>
+        <select name="section__cards__pricing__select" class="section__cards__pricing__select"
+            id="section__cards__pricing__select" onchange="currencySelected()">
+            <option value="usd" selected>USD ($)</option>
+            <option value="euro">EUR (€)</option>
+            <option value="gbp">GBP (£)</option>
+        </select>
         <div class="section__cards__pricing__div">
             <div class="section__cards__pricing__first-card">
                 <h3>Basic</h3>
-                <p class="section__cards__pricing__first-card-pPrice">$0</p>
+                <p class="section__cards__pricing__first-card-pPrice" id="section__cards__pricing__first-card-pPrice">$0
+                </p>
                 <ul class="list">
                     <li><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
                         <p>100 MB HDD</p>
@@ -123,7 +171,8 @@
             </div>
             <div class="section__cards__pricing__second-card">
                 <h3>Professional</h3>
-                <p class="section__cards__pricing__second-card__pPrice">$25</p>
+                <p class="section__cards__pricing__second-card__pPrice"
+                    id="section__cards__pricing__second-card__pPrice">$25</p>
                 <p class="section__cards__pricing__second-card__pLo">Limited offer</p>
                 <ul class="list">
                     <li><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
@@ -146,7 +195,8 @@
             </div>
             <div class="section__cards__pricing__third-card">
                 <h3>Premium</h3>
-                <p class="section__cards__pricing__third-card__pPrice">$60</p>
+                <p class="section__cards__pricing__third-card__pPrice" id="section__cards__pricing__third-card__pPrice">
+                    $60</p>
                 <p class="section__cards__pricing__third-card__pLo">Limited offer</p>
                 <ul class="list">
                     <li><img src="resources\svg\Checkbox.svg" alt="Checkbox Icon">
@@ -169,7 +219,24 @@
             </div>
         </div>
     </section>
-    <section class="section__contact">
+    <section>
+        <div id="slider" class="slider">
+            <div class="slider__images__container">
+                <img src="resources/img/iso-republic-buds-under-arching-branch.jpg" width="600" height="400">
+                <img src="resources/img/iso-republic-colorful-perched-birds.jpg" width="600" height="400">
+                <img src="resources/img/iso-republic-morning-dove-bird.jpg" width="600" height="400">
+                <img src="resources/img/iso-republic-water_droplets_flower.jpg" width="600" height="400">
+            </div>
+            <div class="slider__butons">
+                <button class="slider__butons__prev">&#10094;</button>
+                <button class="slider__butons__next">&#10095;</button>
+            </div>
+            <div class="slider__dots">
+
+            </div>
+        </div>
+    </section>
+    <section class="section__contact" id="section_contact">
         <div class="section__contact__div">
             <h2>Any questions?</h2>
             <p class="section__contact__div__p">Leave your email address or call us!</p>
@@ -181,26 +248,41 @@
             </a>
         </div>
         <div class="section__contact__div__form">
-            <form action="contact.html" method="post">
+            <form action="" method="post" name="contactForm" onchange="validForm()">
                 <label for="name">N A M E:</label>
                 <br>
-                <input type="text" name="name">
+                <input type="text" name="name" id="name">
+                <br>
+                <p class="section__contact__div__form__errorTextName" id="section__contact__div__form__errorTextName">
+                    1-200
+                    characters</p>
                 <br>
                 <label for="email">E M A I L:</label>
                 <br>
-                <input type="email" name="email">
+                <input type="email" name="email" id="email">
                 <br>
-                <input type="checkbox">
-                <p class="section__contact__div__consent">I hereby give consent for my personal data included in my
+                <p class="section__contact__div__form__errorTextEmail" id="section__contact__div__form__errorTextEmail">
+                    Please put a valid email.</p>
+                <br>
+                <input type="checkbox" id="section__contact__div__form__checkBox" name="checkBox">
+                <p class="section__contact__div__consent">I hereby give consent for my personal data included in
+                    my
                     application to be
-                    processed for the purposes of the recruitment process under the European Parliament’s and Council of
+                    processed for the purposes of the recruitment process under the European Parliament’s and
+                    Council of
                     the
-                    European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to
+                    European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with
+                    regard to
                     the
-                    processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC
+                    processing of personal data and on the free movement of such data, and repealing Directive
+                    95/46/EC
                     (Data Protection Directive)</p>
                 </input><br>
-                <button class="section__contact__div__form__button">Send</button>
+                <button onclick="sendDataToAPI()" type="button" class="section__contact__div__form__button"
+                    id="section__contact__div__form__button" disabled>Send</button>
+                <br>
+                <p class="section__contact__div__form__sentStatus" id="section__contact__div__form__sentStatus">
+                </p>
             </form>
         </div>
         </div>
@@ -214,7 +296,8 @@
             <img src="resources\img\Twitter.png" alt="Twitter Icon">
         </div>
     </footer>
-
+    <script src="js\slider.js"></script>
+    <script src="js\newsletter.js"></script>
 </body>
 
 </html>

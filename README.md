@@ -13,5 +13,5 @@ This project aims to practice and learn the use of **SASS** for styling, while u
 To clone and run this project locally, follow these steps:
 
 1. Clone the repository:
-   ```git clone https://github.com/BonoDV/OxygenM1-OxygenShop.git ```
+   ```git clone https://github.com/BonoDV/Oxygen-OxygenShop.git ```
 2. Open the index.html file in your web browser
