@@ -1,0 +1,88 @@
+@use "_variables" as *;
+
+.newsletter__modal {
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+    /* Limita el ancho máximo */
+    height: 50%;
+    /* Altura automática según el contenido */
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    /* Necesario para posicionar el botón de cerrar */
+}
+
+.newsletter__modal[open] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.newsletter__modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.newsletter__modal__closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.newsletter__modal__closeButton:hover {
+    color: #ff0000;
+    /* Cambia el color al pasar el mouse */
+}
+
+.newsletter__modal h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: $ralewayFont;
+
+}
+
+.newsletter__modal__form__label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: $openSansFont;
+}
+
+.newsletter__modal__form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter__modal__form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter__modal__form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

@@ -23,6 +23,19 @@
     <script src="js\sendData.js"></script>
     <script src="js\currencySelector.js"></script>
 
+
+    <dialog class="newsletter__modal" id="newsletter__modal" close>
+        <button type="button" class="newsletter__modal__closeButton" onclick="closeModal()">X</button>
+        <h2>Suscribe to our newsletter</h2>
+        <form action="" method="post" name="newsletterForm">
+            <label for="name" class="newsletter__modal__form__label">E M A I L:</label>
+            <br>
+            <input type="text" id="newsletter__modal__email" onchange="emailVerification()">
+            <button id="newsletter__modal_sendButton" type="button" onclick="sendData()" disabled>Send</button>
+            <p id="newsletter__modal__text"></p>
+        </form>
+    </dialog>
+
     <header class="header">
         <h1 class="header__logo">OXYGENShop</h1>
         <button class="header__button__hamburger" onclick=hamburgerMenuDisplay()><img src="resources\svg\Menu.svg"
@@ -94,7 +107,8 @@
             <img alt="Macbook image" src="resources\img\Macbook.png">
             <div class="section__advantages__first__frame__ellipse"></div>
             <h2>Be always first</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et
                 dolore magna aliqua. Ut enim ad minim veniam.
             </p>
 
@@ -105,14 +119,16 @@
             <img src="resources\img\Iphone.png" alt="Iphone">
             <div class="section__advantages__second__frame__ellipse"></div>
             <h2>Your shop is where you are!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et
                 dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
 
 
         <div class="section__advantages__third__frame">
             <h2>Increase recognition your brand!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et
                 dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
         <div class="section__advantages__third__frame__extension">
@@ -232,7 +248,7 @@
             </a>
         </div>
         <div class="section__contact__div__form">
-            <form action="" method="post" name="contactForm" onchange="validForm()" onsubmit="sendDataToAPI()">
+            <form action="" method="post" name="contactForm" onchange="validForm()">
                 <label for="name">N A M E:</label>
                 <br>
                 <input type="text" name="name" id="name">
@@ -249,19 +265,24 @@
                     Please put a valid email.</p>
                 <br>
                 <input type="checkbox" id="section__contact__div__form__checkBox" name="checkBox">
-                <p class="section__contact__div__consent">I hereby give consent for my personal data included in my
+                <p class="section__contact__div__consent">I hereby give consent for my personal data included in
+                    my
                     application to be
-                    processed for the purposes of the recruitment process under the European Parliament’s and Council of
+                    processed for the purposes of the recruitment process under the European Parliament’s and
+                    Council of
                     the
-                    European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to
+                    European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with
+                    regard to
                     the
-                    processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC
+                    processing of personal data and on the free movement of such data, and repealing Directive
+                    95/46/EC
                     (Data Protection Directive)</p>
                 </input><br>
                 <button onclick="sendDataToAPI()" type="button" class="section__contact__div__form__button"
                     id="section__contact__div__form__button" disabled>Send</button>
                 <br>
-                <p class="section__contact__div__form__sentStatus" id="section__contact__div__form__sentStatus"></p>
+                <p class="section__contact__div__form__sentStatus" id="section__contact__div__form__sentStatus">
+                </p>
             </form>
         </div>
         </div>
@@ -276,6 +297,7 @@
         </div>
     </footer>
     <script src="js\slider.js"></script>
+    <script src="js\newsletter.js"></script>
 </body>
 
 </html>
