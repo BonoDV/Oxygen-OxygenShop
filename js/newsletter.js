@@ -24,7 +24,7 @@ function onTwentyFivePercentScroll() {
             if (!modalOpened) {
                 openModal();
             }
-        }, 5000); // 5000 milisegundos = 5 segundos
+        }, 100); // 5000 milisegundos = 5 segundos
     }
 
     // Función para abrir el modal

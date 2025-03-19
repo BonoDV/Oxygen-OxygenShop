@@ -41,15 +41,24 @@
 
 
     <dialog class="newsletter__modal" id="newsletter__modal" close>
-        <button type="button" class="newsletter__modal__closeButton" onclick="closeModal()">X</button>
-        <h2>Suscribe to our newsletter</h2>
-        <form action="" method="post" name="newsletterForm">
-            <label for="name" class="newsletter__modal__form__label">E M A I L:</label>
-            <br>
-            <input type="text" id="newsletter__modal__email" onchange="emailVerification()">
-            <button id="newsletter__modal_sendButton" type="button" onclick="sendData()" disabled>Send</button>
-            <p id="newsletter__modal__text"></p>
-        </form>
+        <div class="newsletter__modal__content">
+            <div class="newsletter__modal__img">
+                <img src="resources/img/iso-republic-lavender-field.jpg" alt="Lavender Field">
+            </div>
+            <div class="newsletter__modal__form__container">
+                <button type="button" class="newsletter__modal__closeButton" onclick="closeModal()">X</button>
+                <h2>Subscribe to our newsletter</h2>
+                <form action="" method="post" name="newsletterForm">
+                    <label for="name" class="newsletter__modal__form__label">Introduce your email</label>
+                    <br>
+                    <input type="text" id="newsletter__modal__email" class="newsletter__modal__form__input"
+                        onchange="emailVerification()">
+                    <button id="newsletter__modal_sendButton" class="newsletter__modal_sendButton" type="button"
+                        onclick="sendData()" disabled>Send</button>
+                    <p id="newsletter__modal__text" class="newsletter__modal__text"></p>
+                </form>
+            </div>
+        </div>
     </dialog>
 
     <header class="header">
