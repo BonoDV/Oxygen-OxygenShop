@@ -20,7 +20,6 @@ async function currencySelected() {
 
             // Leer el cuerpo de la respuesta (usar await para obtener los datos)
             const data = await response.json();
-            console.log(data.eur.usd); // Mostrar los datos en la consola
 
             firstPrice.textContent = '0€';
             secondPrice.textContent = (originalProfessionalPriceUSD * data.eur.usd).toFixed(0) + '€';
@@ -44,7 +43,6 @@ async function currencySelected() {
 
             // Leer el cuerpo de la respuesta (usar await para obtener los datos)
             const data = await response.json();
-            console.log(data.eur.gbp); // Mostrar los datos en la consola
 
             firstPrice.textContent = '0£';
             secondPrice.textContent = (originalProfessionalPriceUSD * data.eur.gbp).toFixed(0) + '£';
