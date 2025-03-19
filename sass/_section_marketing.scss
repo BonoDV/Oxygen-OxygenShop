@@ -221,7 +221,7 @@
 
     .section__marketing__btn {
         @include sectionCards.buttonStyle(27.5rem, 4.1875rem, auto, auto, auto, $openSansFont,
-            1rem, 700, 1.375rem, $white_advantages_frames, $blue, 2.5rem, 1.4375rem);
+            1rem, 700, 1.375rem, $white_advantages_frames, $blue, 2.5rem, 2.5rem);
     }
 
     .section__marketing__img {
