@@ -474,7 +474,7 @@
 .section__cards__pricing__select {
   position: relative;
   margin-top: 6%;
-  left: 39%;
+  left: 35%;
   width: auto;
   padding: 10px;
   border: 2px solid #ccc;
@@ -483,11 +483,11 @@
   font-size: 16px;
   color: #08A6E4;
   border-color: #08A6E4;
-  appearance: none;
+  /* appearance: none; */
   /* Elimina el estilo por defecto del select */
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   /* Para navegadores basados en WebKit */
-  -moz-appearance: none;
+  /* -moz-appearance: none; */
   /* Para Firefox */
   cursor: pointer;
 }
@@ -504,7 +504,6 @@
   margin-top: 1.875rem;
   position: relative;
 }
-
 .section__cards__pricing__second-card {
   width: 18.3125rem;
   height: 15.6875rem;
@@ -516,7 +515,6 @@
   margin-top: 1.875rem;
   position: relative;
 }
-
 .section__cards__pricing__third-card {
   width: 18.3125rem;
   height: 15.6875rem;
@@ -776,7 +774,8 @@
   .section__cards__pricing__select {
     position: relative;
     margin-top: 3%;
-    left: 47%;
+    left: 46%;
+    width: 8%;
   }
   .section__cards__pricing__first-card,
   .section__cards__pricing__second-card,

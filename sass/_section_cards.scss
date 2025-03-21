@@ -21,7 +21,7 @@
 .section__cards__pricing__select {
     position: relative;
     margin-top: 6%;
-    left: 39%;
+    left: 35%;
     width: auto;
     padding: 10px;
     border: 2px solid #ccc;
@@ -30,11 +30,11 @@
     font-size: 16px;
     color: $blue;
     border-color: $blue;
-    appearance: none;
+    /* appearance: none; */
     /* Elimina el estilo por defecto del select */
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     /* Para navegadores basados en WebKit */
-    -moz-appearance: none;
+    /* -moz-appearance: none; */
     /* Para Firefox */
     cursor: pointer;
 }
@@ -52,17 +52,18 @@
     position: relative;
 }
 
-.section__cards__pricing__first-card {
-    @include pricingCardStyle(18.3125rem, 15.6875rem, auto, 3rem, 3rem, 1.125rem, 1px solid $red);
-}
+.section__cards__pricing {
+    &__first-card {
+        @include pricingCardStyle(18.3125rem, 15.6875rem, auto, 3rem, 3rem, 1.125rem, 1px solid $red);
+    }
 
-.section__cards__pricing__second-card {
-    @include pricingCardStyle(18.3125rem, 15.6875rem, auto, 3rem, 4rem, 1.125rem, 1px solid $blue);
+    &__second-card {
+        @include pricingCardStyle(18.3125rem, 15.6875rem, auto, 3rem, 4rem, 1.125rem, 1px solid $blue);
+    }
 
-}
-
-.section__cards__pricing__third-card {
-    @include pricingCardStyle(18.3125rem, 15.6875rem, auto, 3rem, 3rem, 1.125rem, 1px solid $green);
+    &__third-card {
+        @include pricingCardStyle(18.3125rem, 15.6875rem, auto, 3rem, 3rem, 1.125rem, 1px solid $green);
+    }
 }
 
 /* First cards style (h3, p) */
@@ -220,7 +221,8 @@
     .section__cards__pricing__select {
         position: relative;
         margin-top: 3%;
-        left: 47%;
+        left: 46%;
+        width: 8%;
     }
 
     .section__cards__pricing__first-card,
