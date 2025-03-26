@@ -29,7 +29,7 @@ function onTwentyFivePercentScroll() {
 
     // Función para abrir el modal
     function openModal() {
-        if (localStorage.getItem("modalOpened") !== 'true') {
+        if (sessionStorage.getItem("modalOpened") !== 'true') {
             const modalNewsletter = document.getElementById("newsletter__modal");
             modalOpened = true; // Actualiza el estado del modal
             modalNewsletter.showModal();
@@ -76,7 +76,7 @@ function closeModal() {
     modalNewsletter.close();
     document.body.style.position = '';
     document.body.style.top = '';
-    localStorage.setItem("modalOpened", "true"); // Marca el modal como abierto en localStorage
+    sessionStorage.setItem("modalOpened", "true"); // Marca el modal como abierto en sessionStorage
 }
 async function sendData() {
     let messageSent = document.getElementById("newsletter__modal__text");
