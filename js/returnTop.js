@@ -4,5 +4,5 @@ function toWait(ms) {
 
 async function returnTop() {
     await toWait(200);
-    window.scrollTo(0, 0);
+    document.documentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }

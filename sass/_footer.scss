@@ -31,6 +31,11 @@ footer {
 /* Deskop version */
 @media screen and (min-width: 768px) {
 
+    footer {
+        height: 5.5625rem;
+        margin-top: 10%;
+    }
+
     .footer-text h2,
     .footer-text p {
         position: relative;
