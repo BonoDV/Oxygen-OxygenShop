@@ -3,6 +3,7 @@
 @use "_section_cards" as sectionCards;
 
 .section__contact {
+    width: 60%;
     height: 30rem;
 }
 
@@ -13,7 +14,7 @@
 
 /* P Style */
 .section__contact__div p:not(p[class="section__contact__div__consent"]) {
-    @include sectionFrames.textStyle(70%, 1.375rem, auto, auto, 2rem, $openSansFont, 1rem, 400, 1.375rem);
+    @include sectionFrames.textStyle(110%, 1.375rem, auto, auto, 2rem, $openSansFont, 1rem, 400, 1.375rem);
 }
 
 /* Image Style */
@@ -23,6 +24,7 @@
 
 /* Href Style */
 .section__contact__div a {
+    display: ruby-text;
     text-decoration: none;
 }
 
@@ -43,6 +45,8 @@
     bottom: $bottom;
     position: relative;
 }
+
+
 
 .section__contact__div__form form {
     @include formStyle(19.5rem, 9.8125rem, 2rem, 1.875rem, auto);
@@ -167,6 +171,10 @@
         top: 7%;
     }
 
+    .section__contact__div a {
+        display: inline;
+    }
+
     .section__contact__div a[href="tel:123456789"] {
         position: relative;
         left: 60%;
@@ -175,6 +183,10 @@
 
     .section__contact__div img {
         top: 20%;
+    }
+
+    .section__contact__div__form {
+        width: 20%;
     }
 
     .section__contact__div__form form {

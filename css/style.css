@@ -1187,6 +1187,7 @@
   }
 }
 .section__contact {
+  width: 60%;
   height: 30rem;
 }
 
@@ -1206,7 +1207,7 @@
 
 /* P Style */
 .section__contact__div p:not(p[class=section__contact__div__consent]) {
-  width: 70%;
+  width: 110%;
   height: 1.375rem;
   bottom: auto;
   top: auto;
@@ -1230,6 +1231,7 @@
 
 /* Href Style */
 .section__contact__div a {
+  display: ruby-text;
   text-decoration: none;
 }
 
@@ -1415,6 +1417,9 @@
     width: 80%;
     top: 7%;
   }
+  .section__contact__div a {
+    display: inline;
+  }
   .section__contact__div a[href="tel:123456789"] {
     position: relative;
     left: 60%;
@@ -1422,6 +1427,9 @@
   }
   .section__contact__div img {
     top: 20%;
+  }
+  .section__contact__div__form {
+    width: 20%;
   }
   .section__contact__div__form form {
     width: 27.5rem;
